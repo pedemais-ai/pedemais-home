@@ -5,7 +5,12 @@ import {Container, Navbar, Nav, Button, Card, Row, Col} from "react-bootstrap";
 export default function Home() {
     return (
         <>
-            <Navbar bg="light" expand="md" fixed="top">
+            <Navbar
+                bg="light"
+                expand="md"
+                fixed="top"
+                className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm"
+            >
                 <Container>
                     <Navbar.Brand href="#" className="font-weight-normal">Company name</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

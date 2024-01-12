@@ -1,5 +1,7 @@
+/* Seu código global Bootstrap */
+
 a {
-    color: inherit;
+    color: #004069; /* Azul um pouco mais claro para os links */
     text-decoration: none;
 }
 
@@ -14,7 +16,7 @@ html {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1150px;
 }
 
 .pricing-header {
@@ -24,3 +26,27 @@ html {
 .card-deck .card {
     min-width: 220px;
 }
+
+/* Adicionando estilos para melhorar a leitura em fundo branco */
+body {
+    color: #003552; /* Azul escuro para o texto principal */
+    background-color: #ffffff; /* Fundo branco */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #004069; /* Cores do texto dos títulos - azul um pouco mais claro */
+}
+
+/* Ajuste da cor dos botões para um tom mais claro */
+.btn-primary {
+    color: #fff;
+    background-color: #0098fc; /* Azul mais chamativo e claro para os botões */
+    border-color: #0098fc;
+}
+
+.btn-primary:hover {
+    background-color: #0098fc; /* Mantendo a mesma cor de fundo quando hover */
+    border-color: #0098fc;
+}
+
+/* Outras configurações de estilo que você pode ajustar conforme necessário */

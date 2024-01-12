@@ -30,7 +30,7 @@ export default function Home() {
             <Container>
                 <Row className="mb-5 px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5">
       {/* First Column */}
-      <Col md={6} className="mb-4 mb-md-0 d-flex align-items-center">
+      <Col md={6} className="mb-4 mb-md-0 d-flex align-items-center pe-3">
   <div>
     <h2 className="display-3">Aumente suas vendas no delivery via WhatsApp</h2>
     <p>

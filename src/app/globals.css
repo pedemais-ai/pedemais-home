@@ -50,3 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Outras configurações de estilo que você pode ajustar conforme necessário */
+.custom-bold {
+    font-weight: 800; /* ou qualquer valor que atenda às suas preferências */
+  }

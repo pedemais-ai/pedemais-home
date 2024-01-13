@@ -28,10 +28,14 @@
       <Container>
          <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{ marginTop: '4rem' }}> {/* First Column */}
             <Col md={6} className="mb-4 mb-md-0 d-flex align-items-center pe-3">
-               <div>
-                  <h2 className="display-3">Aumente suas vendas no delivery via WhatsApp</h2>
-                  <p> Mais de 15 mil donos de delivery já descobriram como oferecer um atendimento rápido, prático e lucrativo com a Pede AI, unindo robozinho para WhatsApp, cardápio digital, recuperador de vendas e muito mais. </p>
-               </div>
+            <div>
+  <h2 className="display-3 custom-bold mb-4">Venda Mais no #delivery com o Poder do WhatsApp!</h2>
+  <p style={{ fontSize: '1rem' }}>Milhares de empresários do setor de delivery já experimentaram a eficiência da Pede AI, integrando assistente virtual para WhatsApp, cardápio digital, recuperação de vendas e diversas outras funcionalidades que tornam seu negócio mais lucrativo.</p>
+</div>
+
+
+
+
             </Col> {/* Second Column */}
             <Col md={6}>
                <Form className="p-4" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', marginRight: '20px', border: '1px solid #ccc' }}>
@@ -75,11 +79,21 @@
     <Row>
       <Col md={8}>
         <h2>Você já se sentiu frustrado com o atendimento pelo WhatsApp?</h2>
-        <p>Demora para responder, pedidos anotados errados e atendimento inconsistente são dificuldades comuns para deliveries em crescimento. Mas, para continuar expandindo seu negócio em 2024 é preciso fortalecer o atendimento do seu delivery via WhatsApp.</p>
-        <Button variant="primary">Testar grátis por 7 dias</Button>
+        <p>Demoras nas respostas, anotações equivocadas de pedidos e inconsistências no atendimento são desafios comuns para serviços de delivery em expansão. Para continuar ampliando seu negócio em 2024, é essencial fortalecer a eficiência do atendimento do seu delivery por meio do WhatsApp.</p>
+        <Button
+      variant="primary"
+      className="shadow-lg text-white"
+      style={{
+        fontSize: '1.5rem',
+        padding: '15px 20px',
+        textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
+      }}
+    >
+      Testar grátis por 7 dias
+    </Button>
       </Col>
       <Col md={4}>
-        <img src="/caminho/para/sua/imagem.jpg" alt="Descrição da Imagem" className="img-fluid" />
+        <img src="/help-desk-women.png" alt="Descrição da Imagem" className="img-fluid" />
       </Col>
     </Row>
   </Container>
@@ -90,13 +104,15 @@
             <h1 className="display-4">Planos</h1>
             <p className="lead">Suba ao próximo nível. Oferecemos soluções completas com integração ao WhatsApp. Com preços competitivos, garantimos qualidade e resultados excepcionais. Invista no sucesso do seu negócio agora!</p>
          </div>
+
          <div className="d-flex justify-content-center">
-         <ButtonGroup>
-        <Button variant="secondary">Mensal</Button>
-        <Button variant="secondary" className="active">Semestral</Button>
-        <Button variant="secondary">Anual</Button>
-      </ButtonGroup>
+        <ButtonGroup>
+          <Button variant="secondary" size="lg" className="mr-2 bg-white text-dark hover:bg-primary">Mensal</Button>
+          <Button variant="secondary" size="lg" className="active mr-2 bg-success text-white">Semestral</Button>
+          <Button variant="secondary" size="lg" className="bg-white text-dark hover:bg-primary">Anual</Button>
+        </ButtonGroup>
       </div>
+
          <Row className="card-deck mb-3 text-center mt-5">
             <Col md={4}>
                <Card className="mb-4 shadow-sm">
@@ -109,10 +125,7 @@
   </p>
 
   <ul className="list-unstyled mt-3 mb-4">
-    <li>10 users included</li>
-    <li>2 GB of storage</li>
-    <li>Email support</li>
-    <li>Help center access</li>
+    <li>Para atender às necessidades de pequenos restaurantes e startups, o Plano Essencial oferece integração com WhatsApp e cardápio digital.</li>
   </ul>
   
   <Button variant="outline-primary" size="lg">Testar grátis</Button>
@@ -133,10 +146,7 @@
   </p>
 
   <ul className="list-unstyled mt-3 mb-4">
-    <li>10 users included</li>
-    <li>2 GB of storage</li>
-    <li>Email support</li>
-    <li>Help center access</li>
+    <li>Para restaurantes em crescimento, inclui integração com WhatsApp e cardápio digital, além de funcionalidades avançadas.</li>
   </ul>
   
   <Button variant="primary" size="lg">Testar grátis</Button>
@@ -146,7 +156,7 @@
             <Col md={4}>
                <Card className="mb-4 shadow-sm">
                   <Card.Header>
-                     <Card.Title as="h4" className="my-0 font-weight-normal">Exclusivo</Card.Title>
+                     <Card.Title as="h4" className="my-0 font-weight-normal">Premium</Card.Title>
                   </Card.Header>
                   <Card.Body>
   <p className="mb-1">
@@ -154,10 +164,7 @@
   </p>
 
   <ul className="list-unstyled mt-3 mb-4">
-    <li>10 users included</li>
-    <li>2 GB of storage</li>
-    <li>Email support</li>
-    <li>Help center access</li>
+    <li>Projetado para grandes cadeias de restaurantes, oferece integração com WhatsApp e cardápio digital, personalização avançada e suporte 24/7.</li>
   </ul>
   
   <Button variant="outline-primary" size="lg">Testar grátis</Button>
@@ -167,56 +174,66 @@
          </Row>
       </Container>
 
-      <Row className="mt-5 mb-5 p-5" style={{ backgroundColor: '#001f3f' }}>
-  <Container>
-    <Row>
-      <Col md={8} className="text-white">
-        <h2 className="text-white">Teste grátis e comprove os resultados</h2>
-        <p>Descubra por que milhares de clientes mudaram para o sistema Anota AI. Faça um teste gratuito por sete dias e comprove os resultados em primeira mão.</p>
-        <Button variant="primary">Testar grátis por 7 dias</Button>
-      </Col>
-      <Col md={4}>
-        <img src="/caminho/para/sua/imagem.jpg" alt="Descrição da Imagem" className="img-fluid" />
-      </Col>
-    </Row>
-  </Container>
+      <Row className="mt-5 mb-5 p-5" style={{ backgroundColor: 'rgb(14 205 116)' }}>
+      <Container>
+      <Row>
+        <Col md={8} className="text-white">
+          <h2 className="text-white">Teste gratuitamente e confirme os resultados. </h2>
+          <p>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
+          <Button
+      variant="primary"
+      className="shadow-lg text-white"
+      style={{
+        fontSize: '1.5rem',
+        padding: '15px 20px',
+        textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
+      }}
+    >
+      Testar grátis por 7 dias
+    </Button>
+        </Col>
+        <Col md={4}>
+          <img src="/happy-testfree.png" alt="Descrição da Imagem" className="img-fluid" />
+        </Col>
+      </Row>
+    </Container>
 </Row>
 
 
       <Container>
          <footer className="pt-4 my-md-5 pt-md-5 border-top">
-            <Row>
-               <Col xs={12} md={3}>
-                  <img className="mb-2" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24" /> <small className="d-block mb-3">Copyright&copy; 2019-2024, pede.AI. Todos os direitos reservados.</small> </Col>
-               <Col xs={6} md={3}>
-                  <h5>Features</h5>
-                  <ul className="list-unstyled text-small">
-                     <li><a href="#">Cool stuff</a></li>
-                     <li><a href="#">Random feature</a></li>
-                     <li><a href="#">Team feature</a></li>
-                     <li><a href="#">Stuff for developers</a></li>
-                     <li><a href="#">Another one</a></li>
-                     <li><a href="#">Last time</a></li>
-                  </ul>
-               </Col>
-               <Col xs={6} md={3}>
-                  <h5>Resources</h5>
-                  <ul className="list-unstyled text-small">
-                     <li><a href="#">Resource</a></li>
-                     <li><a href="#">Resource name</a></li>
-                     <li><a href="#">Another resource</a></li>
-                     <li><a href="#">Final resource</a></li>
-                  </ul>
-               </Col>
-               <Col xs={6} md={3}>
-                  <h5>Siga</h5>
-                  <ul className="list-unstyled text-small">
-                     <li><a href="#">Team</a></li>
-                     <li><a href="#">Locations</a></li>
-                     <li><a href="#">Privacy</a></li>
-                  </ul>
-               </Col>
-            </Row>
+         <Row>
+      <Col xs={12} md={3}>
+        Pede.AI <small className="d-block mb-3">Copyright&copy; 2019-2024, pede.AI. Todos os direitos reservados.</small>
+      </Col>
+      <Col xs={6} md={3}>
+        <h5>Recursos Principais</h5>
+        <ul className="list-unstyled text-small">
+          <li><a href="#">Plano Básico</a></li>
+          <li><a href="#">Plano Avançado</a></li>
+          <li><a href="#">Plano Premium</a></li>
+          <li><a href="#">Personalização</a></li>
+          <li><a href="#">Suporte 24/7</a></li>
+        </ul>
+      </Col>
+      <Col xs={6} md={3}>
+        <h5>Recursos Adicionais</h5>
+        <ul className="list-unstyled text-small">
+          <li><a href="#">Integrações</a></li>
+          <li><a href="#">Relatórios</a></li>
+          <li><a href="#">Treinamento</a></li>
+          <li><a href="#">Atualizações</a></li>
+        </ul>
+      </Col>
+      <Col xs={6} md={3}>
+        <h5>Sobre Nós</h5>
+        <ul className="list-unstyled text-small">
+          <li><a href="#">Nossa Equipe</a></li>
+          <li><a href="#">Localizações</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </Col>
+    </Row>
          </footer>
       </Container>
    </>);

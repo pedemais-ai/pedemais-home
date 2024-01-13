@@ -2,7 +2,7 @@
    return (<>
       <Navbar bg="light" expand="md" fixed="top" className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style={{ maxHeight: '81px' }}>
          <Container>
-            <Navbar.Brand href="#" className="font-weight-normal">pede.AI</Navbar.Brand>
+            <Navbar.Brand href="#" className="font-weight-normal">Pede.AI</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                <Row className="align-items-center justify-content-between w-100">

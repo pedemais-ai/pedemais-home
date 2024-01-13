@@ -17,8 +17,12 @@
                 </Col>
                 {/* Button Column (3 columns) */}
                 <Col md={4} className="text-md-right">
-                    <Button variant="primary" className="mt-3 mt-md-0 fs-5 px-4 py-2 w-100">Testar grátis por 7 dias</Button>
-                </Col>
+    <Button variant="primary" className="mt-3 mt-md-0 fs-5 px-4 py-2 w-100" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)', border: '1px solid lightgray' }}>Testar grátis por 7 dias</Button>
+</Col>
+
+
+
+
             </Row>
         </Navbar.Collapse>
     </Container>

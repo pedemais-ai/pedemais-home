@@ -1,5 +1,5 @@
 "use client"; import {Container, Navbar, Nav, Button, Card, Row, Col, Form} from "react-bootstrap"; export default function Home() { return ( <>
-<Navbar bg="light" expand="md" fixed="top" className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm">
+<Navbar bg="light" expand="md" fixed="top" className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style={{ maxHeight: '81px' }}>
     <Container>
         <Navbar.Brand href="#" className="font-weight-normal">pede.AI</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,11 +25,8 @@
 </Navbar>
 
 
-
-
-
     <Container>
-        <Row className="mb-5 px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5"> {/* First Column */}
+        <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{ marginTop: '4rem' }}> {/* First Column */}
             <Col md={6} className="mb-4 mb-md-0 d-flex align-items-center pe-3">
             <div>
                 <h2 className="display-3">Aumente suas vendas no delivery via WhatsApp</h2>

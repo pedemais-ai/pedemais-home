@@ -224,21 +224,23 @@ const Home = () => {
       <Row className="mt-5 mb-5 p-5" style={{ backgroundColor: 'rgb(14 205 116)' }}>
       <Container>
       <Row>
-        <Col md={8} className="text-white">
-          <h3 className="text-white"  style={{ fontSize: '2.5rem' }}>Teste grátis e confirme os resultados.</h3>
-          <p>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
-          <Button
-      variant="primary"
-      className="shadow-lg text-white"
-      style={{
-        fontSize: '1.5rem',
-        padding: '15px 20px',
-        textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
-      }}
-    >
-      Testar grátis por 7 dias
-    </Button>
-        </Col>
+      <Col md={8} className="d-flex flex-column justify-content-center text-white px-5">
+  <h3 className="text-white" style={{ fontSize: '2.5rem' }}>Teste gratuitamente.<br/>Confirme os resultados.</h3>
+  <p>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
+  <Button
+    variant="primary"
+    className="shadow-lg text-white"
+    style={{
+      fontSize: '1.5rem',
+      padding: '15px 5px', // Ajuste o tamanho horizontal do botão aqui
+      textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
+      marginTop: '20px', // Ajuste a margem superior conforme necessário
+    }}
+  >
+    Testar grátis por 7 dias
+  </Button>
+</Col>
+
         <Col md={4} className="mt-md-0 mt-4">
           <Image src="/happy-testfree.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
         </Col>

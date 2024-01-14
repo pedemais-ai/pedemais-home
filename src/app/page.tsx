@@ -1,5 +1,52 @@
-"use client"; import { Container, Navbar, Nav, Button, Card, Row, Col, Form, ButtonGroup, Image, NavDropdown } from "react-bootstrap"; export default function Home() {
-   return (<>
+// page.tsx
+"use client";
+import React, { useState, useEffect } from 'react';
+import { Container, Navbar, Nav, Button, Card, Row, Col, Form, ButtonGroup, Image, NavDropdown } from 'react-bootstrap';
+
+const WordAnimation: React.FC = () => {
+   const [word, setWord] = useState('');
+   const [wordIndex, setWordIndex] = useState(0);
+ 
+   useEffect(() => {
+     const targetWords = ['Pede.AI', 'WhatsApp'];
+     const currentWord = targetWords[wordIndex];
+     const wordArray = currentWord.split('');
+     let displayedWord = '';
+     let charIndex = 0;
+ 
+     const interval = setInterval(() => {
+       displayedWord += wordArray[charIndex];
+       setWord(displayedWord);
+ 
+       charIndex += 1;
+ 
+       if (charIndex === wordArray.length) {
+         clearInterval(interval);
+ 
+         // Aguardar 1500 milissegundos (1.5 segundos) após a palavra ser totalmente escrita
+         setTimeout(() => {
+           // Se já completamos um ciclo, interromper a animação
+           if (wordIndex === targetWords.length - 1) {
+             // Lógica para interromper a animação, se necessário
+             return;
+           }
+ 
+           // Trocar para a próxima palavra após o intervalo
+           setWordIndex((prevIndex) => prevIndex + 1);
+         }, 1500);
+       }
+     }, 150); // Intervalo menor para uma escrita mais lenta
+ 
+     return () => clearInterval(interval);
+   }, [wordIndex]);
+ 
+   return <h1 className="display-3 custom-bold mb-4">Venda Mais no #delivery com o Poder do<br /> {word}!</h1>;
+ };
+ 
+
+const Home = () => {
+  return (
+    <>
     <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
       <Container>
         <Navbar.Brand href="#" className="font-weight-normal">Pede.AI</Navbar.Brand>
@@ -29,7 +76,7 @@
          <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{ marginTop: '4rem' }}> {/* First Column */}
             <Col md={6} className="mb-4 mb-md-0 d-flex align-items-center pe-3">
             <div>
-  <h2 className="display-3 custom-bold mb-4">Venda Mais no #delivery com o Poder do WhatsApp!</h2>
+            <WordAnimation />
   <p style={{ fontSize: '1rem' }}>Milhares de empresários do setor de delivery já experimentaram a eficiência da Pede AI, integrando assistente virtual para WhatsApp, cardápio digital, recuperação de vendas e diversas outras funcionalidades que tornam seu negócio mais lucrativo.</p>
 </div>
 
@@ -236,5 +283,7 @@
     </Row>
          </footer>
       </Container>
-   </>);
+   </> );
 }
+
+export default Home;

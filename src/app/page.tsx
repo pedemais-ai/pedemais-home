@@ -1,29 +1,29 @@
-"use client"; import { Container, Navbar, Nav, Button, Card, Row, Col, Form, ButtonGroup } from "react-bootstrap"; export default function Home() {
+"use client"; import { Container, Navbar, Nav, Button, Card, Row, Col, Form, ButtonGroup, Image, NavDropdown } from "react-bootstrap"; export default function Home() {
    return (<>
-      <Navbar bg="light" expand="md" fixed="top" className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style={{ maxHeight: '81px' }}>
-         <Container>
-            <Navbar.Brand href="#" className="font-weight-normal">Pede.AI</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-               <Row className="align-items-center justify-content-between w-100">
-                  {/* Logo and Nav Links Column (9 columns) */}
-                  <Col md={8} className="mb-3 mb-md-0 d-flex align-items-center">
-                     <Nav className="ml-md-auto">
-                        <Nav.Link href="#" className="text-dark">Funcionalidades</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Materiais para download</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
-                     </Nav>
-                  </Col>
-                  {/* Button Column (3 columns) */}
-                  <Col md={4} className="text-md-right">
-                     <Button variant="primary" className="mt-3 mt-md-0 fs-5 px-4 py-2 w-100" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)', border: '1px solid lightgray' }}>Testar grátis por 7 dias</Button>
-                  </Col>
-               </Row>
-            </Navbar.Collapse>
-         </Container>
-      </Navbar>
+    <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
+      <Container>
+        <Navbar.Brand href="#" className="font-weight-normal">Pede.AI</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Col md={8} className="mb-3 mb-md-0 d-flex align-items-center">
+            <Nav className="ml-md-auto">
+            <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
+                <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
+                <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
+              <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
+              <Nav.Link href="#" className="text-dark">Materiais para download</Nav.Link>
+              <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
+            </Nav>
+          </Col>
+          <Col md={4} className="text-md-right">
+            <Button variant="primary" className="mt-3 mt-md-0 fs-5 px-4 py-2 w-100" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)', border: '1px solid lightgray' }}>Testar grátis por 7 dias</Button>
+          </Col>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
       <Container>
          <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{ marginTop: '4rem' }}> {/* First Column */}
@@ -38,7 +38,7 @@
 
             </Col> {/* Second Column */}
             <Col md={6}>
-               <Form className="p-4" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', marginRight: '20px', border: '1px solid #ccc' }}>
+               <Form className="p-4" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border: '1px solid #ccc' }}>
                   <h5 className="mb-2">Teste a Pede AI sem pagar nada</h5>
                   <p className="lead mb-4">Faça o seu cadastro para testar a Pede AI</p>
                   <Form.Group controlId="formName" className="mb-3">
@@ -78,7 +78,7 @@
   <Container>
     <Row>
       <Col md={8}>
-        <h2>Você já se sentiu frustrado com o atendimento pelo WhatsApp?</h2>
+        <h3 style={{ fontSize: '2.5rem' }}>Você já se sentiu frustrado com o atendimento pelo WhatsApp?</h3>
         <p>Demoras nas respostas, anotações equivocadas de pedidos e inconsistências no atendimento são desafios comuns para serviços de delivery em expansão. Para continuar ampliando seu negócio em 2024, é essencial fortalecer a eficiência do atendimento do seu delivery por meio do WhatsApp.</p>
         <Button
       variant="primary"
@@ -92,8 +92,8 @@
       Testar grátis por 7 dias
     </Button>
       </Col>
-      <Col md={4}>
-        <img src="/help-desk-women.png" alt="Descrição da Imagem" className="img-fluid" />
+      <Col md={4} className="mt-md-0 mt-4">
+      <Image src="/help-desk-women.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
       </Col>
     </Row>
   </Container>
@@ -178,7 +178,7 @@
       <Container>
       <Row>
         <Col md={8} className="text-white">
-          <h2 className="text-white">Teste gratuitamente e confirme os resultados. </h2>
+          <h3 className="text-white"  style={{ fontSize: '2.5rem' }}>Teste grátis e confirme os resultados.</h3>
           <p>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
           <Button
       variant="primary"
@@ -192,8 +192,8 @@
       Testar grátis por 7 dias
     </Button>
         </Col>
-        <Col md={4}>
-          <img src="/happy-testfree.png" alt="Descrição da Imagem" className="img-fluid" />
+        <Col md={4} className="mt-md-0 mt-4">
+          <Image src="/happy-testfree.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
         </Col>
       </Row>
     </Container>

@@ -2,13 +2,15 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Nav, Button, Card, Row, Col, Form, ButtonGroup, Image, NavDropdown } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRobot, faClipboard, faHamburger } from '@fortawesome/free-solid-svg-icons';
 
 const WordAnimation: React.FC = () => {
    const [word, setWord] = useState('');
    const [wordIndex, setWordIndex] = useState(0);
  
    useEffect(() => {
-     const targetWords = ['Pede.AI', 'WhatsApp'];
+     const targetWords = ['Pediu.AI', 'WhatsApp'];
      const currentWord = targetWords[wordIndex];
      const wordArray = currentWord.split('');
      let displayedWord = '';
@@ -49,7 +51,7 @@ const Home = () => {
     <>
     <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
       <Container>
-        <Navbar.Brand href="#" className="font-weight-normal">Pede.AI</Navbar.Brand>
+        <Navbar.Brand href="#" className="font-weight-normal">Pediu.AI</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Col md={8} className="mb-3 mb-md-0 d-flex align-items-center">
@@ -57,6 +59,7 @@ const Home = () => {
             <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
                 <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
+                <NavDropdown.Item href="#">QR Code</NavDropdown.Item>
                 <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
@@ -145,7 +148,74 @@ const Home = () => {
     </Row>
   </Container>
 </Row>
-         
+
+<Container className="mt-5">
+  <h1 className="display-4 text-center mb-5">Como funciona o #delivery</h1>
+  <Row className="text-center">
+    <Col>
+      <div className="bg-light-blue p-4 rounded">
+        <FontAwesomeIcon icon={faRobot} size="3x" className="mb-3" style={{ color: '#007BFF' }} />
+        <h5 className="mb-3" style={{ color: '#007BFF', fontSize: '1.25rem' }}>1. Atendimento WhatsApp</h5>
+        <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
+      </div>
+    </Col>
+    <Col>
+      <div className="bg-light-blue p-4 rounded">
+        <FontAwesomeIcon icon={faClipboard} size="3x" className="mb-3" style={{ color: '#007BFF' }} />
+        <h5 className="mb-3" style={{ color: '#007BFF', fontSize: '1.25rem' }}>2. Pedido no Cardápio Digital</h5>
+        <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
+      </div>
+    </Col>
+    <Col>
+      <div className="bg-light-blue p-4 rounded">
+        <FontAwesomeIcon icon={faHamburger} size="3x" className="mb-3" style={{ color: '#007BFF' }} />
+        <h5 className="mb-3" style={{ color: '#007BFF', fontSize: '1.25rem' }}>3. Gerenciamento de Pedidos</h5>
+        <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br/><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
+      </div>
+    </Col>
+  </Row>
+</Container>
+
+<Container className="mt-5">
+    <Row>
+      <Col md={4} className="px-5">
+      <Image src="/help-desk-women.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
+      </Col>
+      <Col md={8} className="mt-md-0 mt-4 ps-5">
+      
+      <h3 style={{ fontSize: '2.5rem' }}>Robô vs. Humano: Alertas</h3>
+        <p>Imagine receber notificações instantâneas sempre que um cliente precisa de ajuda. Ao contrário de muitos concorrentes, que deixam os clientes à mercê de respostas automáticas, nossa plataforma se destaca ao oferecer uma funcionalidade única: <strong>alertas imediatos em sua tela indicando quando a assistência humana é crucial.</strong> Garantimos que você saiba exatamente quando um toque humano é necessário. Essa abordagem não só evita frustrações, mas também diferencia seu restaurante, mostrando um compromisso real com a experiência e satisfação do cliente.
+<br/><br/>
+Encantar os clientes não é apenas uma estratégia, mas o coração do seu negócio.</p>
+      {/* Imagem */}
+      <Image
+        src="/robo-irrita-mobile.png" // Substitua pelo caminho real da imagem
+        alt="Descrição da Imagem"
+        width="100%"
+        height="100%"
+        fluid
+      />
+
+      {/* Texto */}
+      <p className="mt-3">
+        Fonte: <a href="https://oglobo.globo.com/economia/defesa-do-consumidor/noticia/2022/04/sac-robo-atendimento-automatizado-irrita-clientela-com-burrice-artificial-25477364.ghtml" target="_blank" rel="noopener noreferrer">https://oglobo.globo.com/economia/defesa-do-consumidor/notici...</a>
+      </p>
+        <Button
+      variant="primary"
+      className="shadow-lg text-white"
+      style={{
+        fontSize: '1.5rem',
+        padding: '15px 20px',
+        textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
+      }}
+    >
+      Testar grátis por 7 dias
+    </Button>
+      </Col>
+       </Row>
+       
+  </Container>
+  
          <Container>
          <div className="pricing-header mx-auto text-center mt-5">
             <h1 className="display-4">Planos</h1>

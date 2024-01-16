@@ -286,8 +286,7 @@ const Home = () => {
                <Row>
                   <Col md={8} className="d-flex flex-column justify-content-center text-white px-5">
                      <h3 className="text-white" style={{ fontSize: '2.5rem' }}>
-                        Teste gratuitamente.<br />
-                        Confirme os resultados.
+                        Experimente por 7 dias e veja os resultados
                      </h3>
                      <p style={{ fontSize: '1.2rem' }}>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
                      <Button

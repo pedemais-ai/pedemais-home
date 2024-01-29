@@ -124,8 +124,9 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Row className="mt-5 mb-5 p-5" style={{ backgroundColor: '#e0f7fa' }}>
-            <Container>
+        
+            <Container className="p-5" fluid style={{ backgroundColor: '#e0f7fa' }}>
+               <Container>
                <Row>
                   <Col md={8} className="pe-md-5">
                      <h3 style={{ fontSize: '2.5rem' }}>Você já se sentiu frustrado com o atendimento pelo WhatsApp?</h3>
@@ -146,8 +147,9 @@ const Home = () => {
                      <Image src="/help-desk-women.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
                </Row>
+               </Container>
             </Container>
-         </Row>
+        
 
          <Container className="mt-5">
             <h1 className="display-4 text-center">Como funciona o #delivery</h1>
@@ -176,8 +178,8 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Row className="mt-5 mb-5 p-5" style={{ backgroundColor: '#fafafa' }}>
-            <Container className="mt-5">
+         <Container className="mt-5 p-5 bg-light" fluid>
+            <Container>
                <Row>
                   <Col md={5}>
                      <Image src="/oglobo-noticia.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
@@ -202,9 +204,7 @@ const Home = () => {
                </Row>
 
             </Container>
-         </Row>
-
-         <hr className="my-5" />
+         </Container>
 
          <Container>
             <div className="pricing-header mx-auto text-center mt-5">
@@ -281,17 +281,17 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Row className="mt-5 mb-5 p-5" style={{ backgroundColor: 'rgb(14 205 116)' }}>
+         <Container className="p-5" fluid style={{ backgroundColor: 'rgb(14 205 116)' }}>
             <Container>
                <Row>
-                  <Col md={8} className="d-flex flex-column justify-content-center text-white px-5">
+                  <Col md={8} className="text-white">
                      <h3 className="text-white" style={{ fontSize: '2.5rem' }}>
                         Experimente por 7 dias e veja os resultados
                      </h3>
                      <p style={{ fontSize: '1.2rem' }}>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
                      <Button
                         variant="primary"
-                        className="shadow-lg text-white"
+                        className="shadow-lg text-white w-75"
                         style={{
                            fontSize: '1.5rem',
                            padding: '15px 5px', // Ajuste o tamanho horizontal do botão aqui
@@ -308,7 +308,7 @@ const Home = () => {
                   </Col>
                </Row>
             </Container>
-         </Row>
+         </Container>
 
 
          <Container>

@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
-    title: 'Pede.AI',
+    title: 'Pedemais.AI',
     description: 'Venda Mais no #delivery com o Poder do WhatsApp!',
 }
 

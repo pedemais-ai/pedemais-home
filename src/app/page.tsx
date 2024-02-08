@@ -10,7 +10,7 @@ const WordAnimation: React.FC = () => {
    const [wordIndex, setWordIndex] = useState(0);
 
    useEffect(() => {
-      const targetWords = ['Pediu.AI', 'WhatsApp'];
+      const targetWords = ['Pedemais.AI', 'WhatsApp'];
       const currentWord = targetWords[wordIndex];
       const wordArray = currentWord.split('');
       let displayedWord = '';
@@ -51,7 +51,7 @@ const Home = () => {
       <>
          <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
             <Container>
-               <Navbar.Brand href="#" className="font-weight-normal">Pediu.AI</Navbar.Brand>
+               <Navbar.Brand href="#" className="font-weight-normal">Pedemais.AI</Navbar.Brand>
                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                <Navbar.Collapse id="responsive-navbar-nav">
                   <Col md={8} className="mb-3 mb-md-0 d-flex align-items-center">

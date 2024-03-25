@@ -42,7 +42,7 @@ const WordAnimation: React.FC = () => {
       return () => clearInterval(interval);
    }, [wordIndex]);
 
-   return <h1 className="display-3 custom-bold mb-4">Venda Mais no #delivery com o Poder do<br /> {word}!</h1>;
+   return <h1 className="display-3 custom-bold mb-4 text-white">Venda Mais no <br/><span className="text-yellow">#delivery</span> com <br/>o Poder do <span className="text-yellow">{word}!</span></h1>;
 };
 
 
@@ -51,44 +51,45 @@ const Home = () => {
       <>
          <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
             <Container>
-               <Navbar.Brand href="#" className="font-weight-normal">Pedemais.AI</Navbar.Brand>
-               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Brand href="#" className="font-weight-normal">
+    <Image src="img/logo.png" alt="Descrição da Imagem" className="d-block d-md-none" width="200px" height="auto" fluid /> {/* Para dispositivos móveis */}
+    <Image src="img/logo.png" alt="Descrição da Imagem" className="d-none d-md-block" width="303px" height="59px" fluid /> {/* Para outras resoluções */}
+</Navbar.Brand>
+<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
                <Navbar.Collapse id="responsive-navbar-nav">
-                  <Col md={8} className="mb-3 mb-md-0 d-flex align-items-center">
-                     <Nav className="ml-md-auto">
-                        <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
-                           <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
-                           <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
-                           <NavDropdown.Item href="#">QR Code</NavDropdown.Item>
-                           <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Materiais para download</Nav.Link>
-                        <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
+                  <Col md={12} className="mb-3 mb-md-0 d-flex align-items-center justify-content-md-end justify-content-center"> {/* Adicionando a classe justify-content-center para centralizar */}
+                     <Nav className="ml-md-auto align-items-center">
+                           <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
+                              <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
+                              <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
+                              <NavDropdown.Item href="#">QR Code</NavDropdown.Item>
+                              <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
+                           </NavDropdown>
+                           <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
+                           <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
+                           <Nav.Link href="#" className="text-dark">Fale Conosco</Nav.Link>
+                           <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
+                           <Nav.Link href="#" className="btn btn-primary fs-5 px-4 py-3 ml-2 ms-md-3">Iniciar teste grátis &rarr;</Nav.Link>
                      </Nav>
-                  </Col>
-                  <Col md={4} className="text-md-right">
-                     <Button variant="primary" className="mt-3 mt-md-0 fs-5 px-4 py-2 w-100" style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)', border: '1px solid lightgray' }}>Testar grátis por 7 dias</Button>
                   </Col>
                </Navbar.Collapse>
             </Container>
          </Navbar>
 
-         <Container>
+         <Container className="bg-header p-md-5" fluid>
+         <Image src="/img/robo-apontando-small.png" alt="Robô apontando" width="fluid" height="fluid" />
             <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{ marginTop: '4rem' }}> {/* First Column */}
-               <Col md={6} className="mb-4 mb-md-0 d-flex align-items-center pe-3">
+               <Col md={7} className="ps-md-5 mb-4 mb-md-0 d-flex align-items-center pe-3">
                   <div>
                      <WordAnimation />
-                     <p style={{ fontSize: '1.2rem' }}>Milhares de empresários do setor de delivery já experimentaram a eficiência da Pede AI, integrando assistente virtual para WhatsApp, cardápio digital, recuperação de vendas e diversas outras funcionalidades que tornam seu negócio mais lucrativo.</p>
+                     <h3 className="text-white pb-md-5">Aumente suas vendas com uma<br/>plataforma simples e prática para seus clientes.</h3>
+                     <Button className="p-3" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
+                     <Button className="ms-md-3 p-3" variant="outline-primary" size="lg">Fale com um consultor &rarr;</Button>
                   </div>
-
-
-
-
                </Col> {/* Second Column */}
-               <Col md={6}>
-                  <Form className="p-4" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border: '1px solid #ccc' }}>
+               <Col md={5}>
+                  <Form className="p-4 bg-white" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border: '1px solid #ccc' }}>
                      <h5 className="mb-2">Teste a Pede AI sem pagar nada</h5>
                      <p className="lead mb-4">Faça o seu cadastro para testar a Pede AI</p>
                      <Form.Group controlId="formName" className="mb-3">
@@ -125,12 +126,15 @@ const Home = () => {
          </Container>
 
         
-            <Container className="p-5" fluid style={{ backgroundColor: '#e0f7fa' }}>
+            <Container className="" fluid>
                <Container>
                <Row>
-                  <Col md={8} className="pe-md-5">
-                     <h3 style={{ fontSize: '2.5rem' }}>Você já se sentiu frustrado com o atendimento pelo WhatsApp?</h3>
-                     <p style={{ fontSize: '1.2rem' }}>Demoras nas respostas, anotações equivocadas de pedidos e inconsistências no atendimento são desafios comuns para serviços de delivery em expansão. Para continuar ampliando seu negócio em 2024, é essencial fortalecer a eficiência do atendimento do seu delivery por meio do WhatsApp.</p>
+                  <Col md={5} className="pe-md-5">
+                     <h1>
+                        <span className="text-yellow">Seus clientes<br/>pedem pelo WhatsApp,<br/></span>
+                        <span className="text-darkred">sem intermediários</span>
+                     </h1>
+                     <h3>Maximize suas margens de lucro</h3>
                      <Button
                         variant="primary"
                         className="shadow-lg text-white"
@@ -143,8 +147,8 @@ const Home = () => {
                         Testar grátis por 7 dias
                      </Button>
                   </Col>
-                  <Col md={4} className="mt-md-0 mt-4">
-                     <Image src="/help-desk-women.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
+                  <Col md={7} className="mt-md-0 mt-4">
+                     <Image src="/img/pedido-whatsapp.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
                </Row>
                </Container>
@@ -178,7 +182,7 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Container className="mt-5 p-5 bg-light" fluid>
+         <Container className="mt-5 bg-light" fluid>
             <Container>
                <Row>
                   <Col md={5}>
@@ -281,7 +285,7 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Container className="p-5" fluid style={{ backgroundColor: 'rgb(14 205 116)' }}>
+         <Container className="" fluid style={{ backgroundColor: 'rgb(14 205 116)' }}>
             <Container>
                <Row>
                   <Col md={8} className="text-white">
@@ -295,11 +299,10 @@ const Home = () => {
                         style={{
                            fontSize: '1.5rem',
                            padding: '15px 5px', // Ajuste o tamanho horizontal do botão aqui
-                           textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
                            marginTop: '20px', // Ajuste a margem superior conforme necessário
                         }}
                      >
-                        Testar grátis por 7 dias
+                        Iniciar teste grátis
                      </Button>
                   </Col>
 

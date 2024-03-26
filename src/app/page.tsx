@@ -42,7 +42,7 @@ const WordAnimation: React.FC = () => {
       return () => clearInterval(interval);
    }, [wordIndex]);
 
-   return <h1 className="display-3 custom-bold mb-4 text-white">Venda Mais no <br/><span className="text-yellow">#delivery</span> com <br/>o Poder do <span className="text-yellow">{word}!</span></h1>;
+   return <h1 className="display-3 custom-bold mb-4 text-white">Venda Mais no <br /><span className="text-yellow">#delivery</span> com <br />o Poder do <span className="text-yellow">{word}!</span></h1>;
 };
 
 
@@ -51,26 +51,26 @@ const Home = () => {
       <>
          <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
             <Container>
-            <Navbar.Brand href="#" className="font-weight-normal">
-    <Image src="img/logo.png" alt="Descrição da Imagem" className="d-block d-md-none" width="200px" height="auto" fluid /> {/* Para dispositivos móveis */}
-    <Image src="img/logo.png" alt="Descrição da Imagem" className="d-none d-md-block" width="303px" height="59px" fluid /> {/* Para outras resoluções */}
-</Navbar.Brand>
-<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+               <Navbar.Brand href="#" className="font-weight-normal">
+                  <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-block d-md-none" width="200px" height="auto" fluid /> {/* Para dispositivos móveis */}
+                  <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-none d-md-block" width="303px" height="59px" fluid /> {/* Para outras resoluções */}
+               </Navbar.Brand>
+               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
                <Navbar.Collapse id="responsive-navbar-nav">
                   <Col md={12} className="mb-3 mb-md-0 d-flex align-items-center justify-content-md-end justify-content-center"> {/* Adicionando a classe justify-content-center para centralizar */}
                      <Nav className="ml-md-auto align-items-center">
-                           <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
-                              <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
-                              <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
-                              <NavDropdown.Item href="#">QR Code</NavDropdown.Item>
-                              <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
-                           </NavDropdown>
-                           <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
-                           <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
-                           <Nav.Link href="#" className="text-dark">Fale Conosco</Nav.Link>
-                           <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
-                           <Nav.Link href="#" className="btn btn-primary fs-5 px-4 py-3 ml-2 ms-md-3">Iniciar teste grátis &rarr;</Nav.Link>
+                        <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
+                           <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
+                           <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
+                           <NavDropdown.Item href="#">QR Code</NavDropdown.Item>
+                           <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
+                        <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
+                        <Nav.Link href="#" className="text-dark">Fale Conosco</Nav.Link>
+                        <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
+                        <Nav.Link href="#" className="btn btn-primary fs-5 px-4 py-3 ml-2 ms-md-3">Iniciar teste grátis &rarr;</Nav.Link>
                      </Nav>
                   </Col>
                </Navbar.Collapse>
@@ -78,20 +78,20 @@ const Home = () => {
          </Navbar>
 
          <Container className="bg-header p-md-5" fluid>
-         <Image src="/img/robo-apontando-small.png" alt="Robô apontando" width="fluid" height="fluid" />
+            <Image src="/img/robo-apontando-small.png" alt="Robô apontando" width="fluid" height="fluid" />
             <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{ marginTop: '4rem' }}> {/* First Column */}
                <Col md={7} className="ps-md-5 mb-4 mb-md-0 d-flex align-items-center pe-3">
                   <div>
                      <WordAnimation />
-                     <h3 className="text-white pb-md-5">Aumente suas vendas com uma<br/>plataforma simples e prática para seus clientes.</h3>
+                     <h3 className="text-white pb-md-5">Aumente suas vendas com uma<br />plataforma simples e prática para seus clientes.</h3>
                      <Button className="p-3" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
-                     <Button className="ms-md-3 p-3" variant="outline-primary" size="lg">Fale com um consultor &rarr;</Button>
+                     <Button className="ms-md-3 p-3 text-white" variant="outline-primary" size="lg">Fale com um consultor &rarr;</Button>
                   </div>
                </Col> {/* Second Column */}
                <Col md={5}>
                   <Form className="p-4 bg-white" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border: '1px solid #ccc' }}>
-                     <h5 className="mb-2">Teste a Pede AI sem pagar nada</h5>
-                     <p className="lead mb-4">Faça o seu cadastro para testar a Pede AI</p>
+                     <h5 className="mb-2 text-red">Teste a PedeMais.Ai sem pagar nada</h5>
+                     <p className="lead mb-4">Faça o seu cadastro rapidinho ai</p>
                      <Form.Group controlId="formName" className="mb-3">
                         <Form.Control type="text" placeholder="Seu Nome" className="rounded" style={{ height: '50px' }} />
                      </Form.Group>
@@ -125,88 +125,233 @@ const Home = () => {
             </Row>
          </Container>
 
-        
-            <Container className="" fluid>
-               <Container>
+         <Container className="pt-5 mt-5" fluid>
+            <Container>
                <Row>
-                  <Col md={5} className="pe-md-5">
-                     <h1>
-                        <span className="text-yellow">Seus clientes<br/>pedem pelo WhatsApp,<br/></span>
-                        <span className="text-darkred">sem intermediários</span>
-                     </h1>
-                     <h3>Maximize suas margens de lucro</h3>
-                     <Button
-                        variant="primary"
-                        className="shadow-lg text-white"
-                        style={{
-                           fontSize: '1.5rem',
-                           padding: '15px 20px',
-                           textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
-                        }}
-                     >
-                        Testar grátis por 7 dias
-                     </Button>
+                  <Col md={6}>
+                     <Image src="/img/phone.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
-                  <Col md={7} className="mt-md-0 mt-4">
+                  <Col md={6} className="mt-md-0 mt-4 ps-md-5">
+                     <div className="mt-md-5">
+                        <h1 className="mb-4">
+                           <span className="text-darkred">Compreenda as necessidades dos clientes e agilize os pedidos</span>
+                        </h1>
+                        <p>Utilize a automação do WhatsApp, impulsionada pela nossa IA, para responder a perguntas frequentes, facilitando aos clientes a realização de pedidos e garantindo uma experiência excepcional!</p>
+
+                        <Row className="mt-2">
+                           <Col md={12}>
+                              <div className="d-flex align-items-center mt-3 mb-4">
+                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
+                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 </div>
+                                 <div>
+
+                                    <span style={{ fontWeight: 300 }}>Utilize os dados do histórico de pedidos dos clientes para reengajá-los pelo WhatsApp, com sugestões inteligentes e personalizadas.</span>
+                                 </div>
+                              </div>
+                           </Col>
+                           <Col md={12}>
+                              <div className="d-flex align-items-center mb-4 ">
+                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
+                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 </div>
+                                 <div>
+
+                                    <span style={{ fontWeight: 300 }}>Envie campanhas no WhatsApp para promover recompras de produtos ou pratos favoritos, oferecendo descontos especiais, tudo isso impulsionado pela nossa Inteligência Artificial de última geração.</span>
+                                 </div>
+                              </div>
+                           </Col>
+                           <Col md={12}>
+                              <div className="d-flex align-items-center">
+                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
+                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 </div>
+                                 <div>
+
+                                    <span style={{ fontWeight: 300 }}>Aumente a eficiência do atendimento ao cliente com respostas rápidas e precisas graças à nossa Inteligência Artificial.</span>
+                                 </div>
+                              </div>
+                           </Col>
+                        </Row>
+                     </div>
+                  </Col>
+               </Row>
+            </Container>
+         </Container>
+
+         <Container className="bg-comofunciona border-bottom" fluid>
+            <Container className="pt-5 mt-5">
+               <h1 className="text-center"><span className="text-darkred">Como funciona o</span> <span className="text-yellow">#delivery</span></h1>
+               <Row className="text-center">
+                  <Col md={4}>
+                     <div className="p-4 rounded mt-3 mt-md-5">
+                        <Image src="img/comofunciona-atendimento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <h5 className="mb-3">1. Atendimento WhatsApp</h5>
+                        <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
+                     </div>
+                  </Col>
+                  <Col md={4}>
+                     <div className="p-4 rounded mt-3 mt-md-5">
+                        <Image src="img/comofunciona-cardapio.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <h5 className="mb-3">2. Pedido no Cardápio Digital</h5>
+                        <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
+                     </div>
+                  </Col>
+                  <Col md={4}>
+                     <div className="p-4 rounded mt-3 mt-md-5">
+                        <Image src="img/comofunciona-gerenciamento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <h5 className="mb-3">3. Gerenciamento de Pedidos</h5>
+                        <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br /><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
+                     </div>
+                  </Col>
+               </Row>
+            </Container>
+         </Container>
+
+         <Container className="pt-5 mt-5" fluid>
+            <Container>
+               <Row>
+                  <Col md={5} className="d-flex align-items-center pe-md-5">
+                     <div>
+                        <h1>
+                           <span className="text-yellow">Seus clientes<br />pedem pelo WhatsApp,<br /></span>
+                           <span className="text-darkred">sem intermediários</span>
+                        </h1>
+                        <Row>
+                           <Col md={12}>
+                              <div className="d-flex align-items-center mt-3 mb-4">
+                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
+                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 </div>
+                                 <div>
+                                    <h5 className="">Maximize suas margens de lucro</h5>
+                                    <span style={{ fontWeight: 300 }}>Economize no pagamento das taxas de aplicativos de delivery, tendo o seu próprio canal de entregas.</span>
+                                 </div>
+                              </div>
+                           </Col>
+                           <Col md={12}>
+                              <div className="d-flex align-items-center mb-4 ">
+                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
+                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 </div>
+                                 <div>
+                                    <h5 className="">Aumente a fidelidade ao seu negócio</h5>
+                                    <span style={{ fontWeight: 300 }}>Utilize os descontos e seu programa de fidelização para fidelizar seus clientes.</span>
+                                 </div>
+                              </div>
+                           </Col>
+                           <Col md={12}>
+                              <div className="d-flex align-items-center">
+                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
+                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 </div>
+                                 <div>
+                                    <h5 className="">Ganhe tempo em cada pedido</h5>
+                                    <span style={{ fontWeight: 300 }}>Receba os seus pedidos sem demorar em atendimentos prolongados.</span>
+                                 </div>
+                              </div>
+                           </Col>
+                        </Row>
+                     </div>
+                  </Col>
+                  <Col md={7} className="mt-md-0 mt-4 d-flex justify-content-center align-items-center">
                      <Image src="/img/pedido-whatsapp.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
                </Row>
-               </Container>
             </Container>
-        
-
-         <Container className="mt-5">
-            <h1 className="display-4 text-center">Como funciona o #delivery</h1>
-            <Row className="text-center">
-               <Col md={4}>
-                  <div className="bg-light-blue p-4 rounded mt-3 mt-md-5">
-                     <FontAwesomeIcon icon={faRobot} size="3x" className="mb-3" style={{ color: '#007BFF' }} />
-                     <h5 className="mb-3" style={{ color: '#007BFF', fontSize: '1.25rem' }}>1. Atendimento WhatsApp</h5>
-                     <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
-                  </div>
-               </Col>
-               <Col md={4}>
-                  <div className="bg-light-blue p-4 rounded mt-3 mt-md-5">
-                     <FontAwesomeIcon icon={faClipboard} size="3x" className="mb-3" style={{ color: '#007BFF' }} />
-                     <h5 className="mb-3" style={{ color: '#007BFF', fontSize: '1.25rem' }}>2. Pedido no Cardápio Digital</h5>
-                     <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
-                  </div>
-               </Col>
-               <Col md={4}>
-                  <div className="bg-light-blue p-4 rounded mt-3 mt-md-5">
-                     <FontAwesomeIcon icon={faHamburger} size="3x" className="mb-3" style={{ color: '#007BFF' }} />
-                     <h5 className="mb-3" style={{ color: '#007BFF', fontSize: '1.25rem' }}>3. Gerenciamento de Pedidos</h5>
-                     <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br /><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
-                  </div>
-               </Col>
-            </Row>
          </Container>
 
-         <Container className="mt-5 bg-light" fluid>
-            <Container>
+         <Container className="bg-tipo" fluid>
+            <Container className="pt-5 mt-5">
                <Row>
-                  <Col md={5}>
-                     <Image src="/oglobo-noticia.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
+                  <Col md={4}>
+                     <Image src="/img/phone.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
-                  <Col md={7} className="mt-md-0 mt-4 ps-md-5">
-
-                     <h3 style={{ fontSize: '2.5rem' }}>Robôs vs. Humanos</h3>
-                     <p style={{ fontSize: '1.2rem' }}>Em certos casos, a intervenção humana é necessária. <strong>Receba alertas imediatos em sua tela indicando quando um cliente precisar de ajuda além da capacidade do robô,</strong> se destacando dos concorrentes que deixam os clientes à mercê de respostas automáticas apenas. Essa abordagem não só evita frustrações, mas também diferencia seu negócio, mostrando um compromisso real com a experiência e satisfação do cliente.</p>
-
-                     <Button
-                        variant="primary"
-                        className="shadow-lg text-white"
-                        style={{
-                           fontSize: '1.5rem',
-                           padding: '15px 20px',
-                           textShadow: '0 0 10px rgba(255, 255, 255, 0.7)', // Adiciona um efeito de brilho
-                        }}
-                     >
-                        Testar grátis por 7 dias
-                     </Button>
+                  <Col md={8} className="mt-md-0 mt-4 ps-md-5">
+                     <div className="mt-md-5">
+                        <Col xs={12} md={10}>
+                           <h1 className="mb-4">
+                              <span className="text-darkred">Tipos de negócio que atendemos</span>
+                           </h1>
+                           <p>Nós somos especialistas em tornar a vida mais fácil para os negócios! Com a PedeMais.Ai facilitamos o atendimento ao cliente e agilizamos suas operações, sem complicações. E não importa se você tem uma hamburgueria, uma pizzaria ou até uma sorveteria, nós estamos aqui para te ajudar a crescer!</p>
+                        </Col>
+                        <Row className="text-darkred">
+                           <Col xs={6} md={4}>
+                              <ul className="list-unstyled text-small">
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/hamb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Hamburgueria</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/PitDog.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Fast Food</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/fast.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Hot Dog</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center">
+                                       <Image src="img/svg-restaurantes/acai.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Açaí</span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </Col>
+                           <Col xs={6} md={4}>
+                              <ul className="list-unstyled text-small">
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/rest.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Restaurante</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/pizza.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Pizzaria</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/cerva.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Cervejaria</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center">
+                                       <Image src="img/svg-restaurantes/pub.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Pub</span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </Col>
+                           <Col xs={6} md={4}>
+                              <ul className="list-unstyled text-small">
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/sorb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Sorveteria</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/bolos.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Casa de bolos</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center mb-3">
+                                       <Image src="img/svg-restaurantes/churrasco.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Churrascaria</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div className="d-flex align-items-center">
+                                       <Image src="img/svg-restaurantes/frutos-mar.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">E muito mais</span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </Col>
+                        </Row>
+                     </div>
                   </Col>
                </Row>
-
             </Container>
          </Container>
 
@@ -285,70 +430,34 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Container className="" fluid style={{ backgroundColor: 'rgb(14 205 116)' }}>
+
+
+
+         <Container className="bg-bottom" fluid>
             <Container>
-               <Row>
-                  <Col md={8} className="text-white">
-                     <h3 className="text-white" style={{ fontSize: '2.5rem' }}>
-                        Experimente por 7 dias e veja os resultados
-                     </h3>
-                     <p style={{ fontSize: '1.2rem' }}>Descubra o motivo pelo qual milhares de clientes migraram para o sistema Pede AI. Realize um teste gratuito de sete dias e experimente os resultados em primeira mão.</p>
-                     <Button
-                        variant="primary"
-                        className="shadow-lg text-white w-75"
-                        style={{
-                           fontSize: '1.5rem',
-                           padding: '15px 5px', // Ajuste o tamanho horizontal do botão aqui
-                           marginTop: '20px', // Ajuste a margem superior conforme necessário
-                        }}
-                     >
-                        Iniciar teste grátis
-                     </Button>
-                  </Col>
-
-                  <Col md={4} className="mt-md-0 mt-4">
-                     <Image src="/happy-testfree.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
-                  </Col>
-               </Row>
+               <footer className="pt-4 my-3 pt-5">
+                  <Row className="border-bottom">
+                     <Col xs={12} md={3}>
+                        <Image src="img/logo.svg" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                     </Col>
+                     <Col xs={6} md={3}>
+                        <ul className="list-unstyled text-small">
+                           <li><a href="#">Funcionalidades</a></li>
+                           <li><a href="#">Planos</a></li>
+                           <li><a href="#">F.A.Q.</a></li>
+                        </ul>
+                     </Col>
+                     <Col xs={6} md={3}>
+                        <ul className="list-unstyled text-small">
+                           <li><a href="#">Fale Conosco</a></li>
+                           <li><a href="#">Política de privacidade</a></li>
+                           <li><a href="#">Fale com um consultor</a></li>
+                        </ul>
+                     </Col>
+                  </Row>
+               </footer>
+               <small className="d-block mb-3 font-weight-light">PedeMais.Ai<br />Copyright&copy; 2019-2024. Todos os direitos reservados.</small>
             </Container>
-         </Container>
-
-
-         <Container>
-            <footer className="pt-4 my-md-5 pt-md-5 border-top">
-               <Row>
-                  <Col xs={12} md={3}>
-                     Pede.AI <small className="d-block mb-3">Copyright&copy; 2019-2024, pede.AI. Todos os direitos reservados.</small>
-                  </Col>
-                  <Col xs={6} md={3}>
-                     <h5>Recursos Principais</h5>
-                     <ul className="list-unstyled text-small">
-                        <li><a href="#">Plano Básico</a></li>
-                        <li><a href="#">Plano Avançado</a></li>
-                        <li><a href="#">Plano Premium</a></li>
-                        <li><a href="#">Personalização</a></li>
-                        <li><a href="#">Suporte 24/7</a></li>
-                     </ul>
-                  </Col>
-                  <Col xs={6} md={3}>
-                     <h5>Recursos Adicionais</h5>
-                     <ul className="list-unstyled text-small">
-                        <li><a href="#">Integrações</a></li>
-                        <li><a href="#">Relatórios</a></li>
-                        <li><a href="#">Treinamento</a></li>
-                        <li><a href="#">Atualizações</a></li>
-                     </ul>
-                  </Col>
-                  <Col xs={6} md={3}>
-                     <h5>Sobre Nós</h5>
-                     <ul className="list-unstyled text-small">
-                        <li><a href="#">Nossa Equipe</a></li>
-                        <li><a href="#">Localizações</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                     </ul>
-                  </Col>
-               </Row>
-            </footer>
          </Container>
       </>);
 }

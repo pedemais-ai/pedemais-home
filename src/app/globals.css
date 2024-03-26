@@ -1,157 +1,201 @@
 /* Seu código global Bootstrap */
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 a {
-    color: #5c5754; /* Azul um pouco mais claro para os links */
-    text-decoration: none;
+  color: #5c5754; /* Azul um pouco mais claro para os links */
+  text-decoration: none;
+  font-family: Montserrat;
 }
 
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 .container {
-    max-width: 1480px;
+  max-width: 1480px;
 }
 
+.container li {
+    font-family: Montserrat;
+  }
+
 .pricing-header {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .card-deck .card {
-    min-width: 220px;
+  min-width: 220px;
 }
 
 /* Adicionando estilos para melhorar a leitura em fundo branco */
 body {
-    color: #5c5754; /* Azul escuro para o texto principal */
-    background-color: #ffffff; /* Fundo branco */
+  color: #5c5754; /* Azul escuro para o texto principal */
+  background-color: #ffffff; /* Fundo branco */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #000; /* Cores do texto dos títulos - azul um pouco mais claro */
-    font-weight:600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+  color: #000; /* Cores do texto dos títulos - azul um pouco mais claro */
+  font-weight: 400;
 }
 
 .bg-header {
-    background-image: url('/img/header-bg.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-    background-position: top center; /* Centraliza a imagem */
-    position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
-    margin-top:102px;
+  background-image: url("/img/header-bg.jpg");
+  background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+  background-position: top center; /* Centraliza a imagem */
+  position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
+  margin-top: 102px;
 }
 
 .bg-tipo {
-    background-image: url('/img/bg-tipo-whatsapp.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-    background-position: top center; /* Centraliza a imagem */
-    position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
-    margin-top:102px;
-    min-height:900px;
+  background-image: url("/img/bg-tipo-whatsapp.jpg");
+  background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+  background-position: top center; /* Centraliza a imagem */
+  position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
+  margin-top: 102px;
+  min-height: 900px;
 }
 
 .bg-comofunciona {
-    background-image: url('/img/bg-tipo-whatsapp.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-    background-position: top center; /* Centraliza a imagem */
-    position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
-    margin-top:102px;
-    min-height:900px;
+  background-image: url("/img/bg-tipo-whatsapp.jpg");
+  background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+  background-position: top center; /* Centraliza a imagem */
+  position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
+  margin-top: 102px;
+  min-height: 900px;
 }
 
 .bg-header img {
-    display:none;
+  display: none;
 }
 
 /* Para larguras de tela maiores que 1280px */
 @media (min-width: 1020px) {
-    .bg-header img {
-        display:block;
-        position: absolute;
-        bottom: -89px; /* Move a imagem para 50% da altura do cabeçalho */
-        left: 50%; /* Move a imagem para 50% da largura do cabeçalho */
-        transform: translate(-50%, 0%); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
-        width: 200px;
-        height: auto;
-        z-index: 0;
-    }
+  .bg-header img {
+    display: block;
+    position: absolute;
+    bottom: -89px; /* Move a imagem para 50% da altura do cabeçalho */
+    left: 50%; /* Move a imagem para 50% da largura do cabeçalho */
+    transform: translate(
+      -50%,
+      0%
+    ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
+    width: 200px;
+    height: auto;
+    z-index: 0;
+  }
 }
 
 /* Para larguras de tela maiores que 1280px */
 @media (min-width: 1500px) and (max-width: 1680px) {
-    .bg-header img {
-        bottom: -117px; /* Move a imagem para 50% da altura do cabeçalho */
-        width: 260px;
-    }
+  .bg-header img {
+    bottom: -117px; /* Move a imagem para 50% da altura do cabeçalho */
+    width: 260px;
+  }
 }
 
 /* Para larguras de tela de 1600px ou maiores */
 @media (min-width: 1680px) {
-    .bg-header img {
-        bottom: -157px; /* Move a imagem para 50% da altura do cabeçalho */
-        width: 350px;
-    }
+  .bg-header img {
+    bottom: -157px; /* Move a imagem para 50% da altura do cabeçalho */
+    width: 350px;
+  }
 }
 
 .text-yellow {
-    color:#f7b300;
+  color: #f7b300;
 }
 
 .text-darkred {
-    color:#75002a;
+  color: #75002a;
 }
 
 .text-red {
-    color: #e50b0b;
+  color: #e50b0b;
 }
 
 /* Ajuste da cor dos botões para um tom mais claro */
 .btn-primary {
-    color: #000;
-    background-color: #ffbc00; /* Azul mais chamativo e claro para os botões */
-    border: none;
-    font-weight: 500;
-    border-radius: 20px;
+  font-family: Montserrat;
+  color: #000;
+  background-color: #ffbc00; /* Azul mais chamativo e claro para os botões */
+  border: none;
+  font-weight: 500;
+  border-radius: 20px;
 }
 
 .btn-primary:hover {
-    background-color: #e7ab05; /* Mantendo a mesma cor de fundo quando hover */
-    color:#000;
+  background-color: #e7ab05; /* Mantendo a mesma cor de fundo quando hover */
+  color: #000;
 }
 
 .btn-outline-primary {
-    border-color:#f7b300;
-    font-weight: 300;
-    border-radius: 20px;
-    color:#000;
+  font-family: Montserrat;
+  border-color: #f7b300;
+  font-weight: 300;
+  border-radius: 20px;
+  color: #000;
 }
 
 .btn-outline-primary:hover {
-    background-color: unset;
-    border-color:#fff;
-    border-radius: 20px;
-    color:#000;
+  background-color: unset;
+  border-color: #fff;
+  border-radius: 20px;
+  color: #000;
 }
 
 /* Outras configurações de estilo que você pode ajustar conforme necessário */
 .custom-bold {
-    font-weight: 800; /* ou qualquer valor que atenda às suas preferências */
-  }
+  font-weight: 800; /* ou qualquer valor que atenda às suas preferências */
+}
 
-  .bg-light-blue {
-    background-color: #e0f7fa;
-  }
+.bg-light-blue {
+  background-color: #e0f7fa;
+}
 
-  .bg-yellow {
-    background-color:#ffbc00;
-  }
+.bg-yellow {
+  background-color: #ffbc00;
+}
 
-  .bg-bottom {
-    background: rgb(241,241,241);
-    background: linear-gradient(180deg, rgba(250,250,250,1) 30%, rgba(255,255,255,1) 60%);
-  }
+.bg-bottom {
+  background: rgb(241, 241, 241);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 250, 250, 1) 30%,
+    rgba(255, 255, 255, 1) 60%
+  );
+}

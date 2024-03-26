@@ -90,7 +90,7 @@ const Home = () => {
                </Col> {/* Second Column */}
                <Col md={5}>
                   <Form className="p-4 bg-white" style={{ borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border: '1px solid #ccc' }}>
-                     <h5 className="mb-2 text-red">Teste a PedeMais.Ai sem pagar nada</h5>
+                     <h5 className="mb-2 text-red custom-bold">Teste a PedeMais.Ai sem pagar nada</h5>
                      <p className="lead mb-4">Faça o seu cadastro rapidinho ai</p>
                      <Form.Group controlId="formName" className="mb-3">
                         <Form.Control type="text" placeholder="Seu Nome" className="rounded" style={{ height: '50px' }} />
@@ -134,7 +134,7 @@ const Home = () => {
                   <Col md={6} className="mt-md-0 mt-4 ps-md-5">
                      <div className="mt-md-5">
                         <h1 className="mb-4">
-                           <span className="text-darkred">Compreenda as necessidades dos clientes e agilize os pedidos</span>
+                           <span className="text-darkred custom-bold">Compreenda as necessidades dos clientes e agilize os pedidos</span>
                         </h1>
                         <p>Utilize a automação do WhatsApp, impulsionada pela nossa IA, para responder a perguntas frequentes, facilitando aos clientes a realização de pedidos e garantindo uma experiência excepcional!</p>
 
@@ -181,7 +181,7 @@ const Home = () => {
 
          <Container className="bg-comofunciona border-bottom" fluid>
             <Container className="pt-5 mt-5">
-               <h1 className="text-center"><span className="text-darkred">Como funciona o</span> <span className="text-yellow">#delivery</span></h1>
+               <h1 className="text-center custom-bold display-4"><span className="text-darkred">Como funciona o</span> <span className="text-yellow">#delivery</span></h1>
                <Row className="text-center">
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
@@ -213,40 +213,40 @@ const Home = () => {
                <Row>
                   <Col md={5} className="d-flex align-items-center pe-md-5">
                      <div>
-                        <h1>
+                        <h1 className="custom-bold">
                            <span className="text-yellow">Seus clientes<br />pedem pelo WhatsApp,<br /></span>
                            <span className="text-darkred">sem intermediários</span>
                         </h1>
                         <Row>
                            <Col md={12}>
                               <div className="d-flex align-items-center mt-3 mb-4">
-                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
-                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 <div className="rounded-circle bg-yellow mr-3 me-4">
+                                    <Image src="img/svg-vantagens/ICON-1-VANTAGENS.svg" width="90px" height="auto" alt="Descrição da Imagem" />
                                  </div>
                                  <div>
-                                    <h5 className="">Maximize suas margens de lucro</h5>
+                                    <h5 className="custom-bold">Maximize suas margens de lucro</h5>
                                     <span style={{ fontWeight: 300 }}>Economize no pagamento das taxas de aplicativos de delivery, tendo o seu próprio canal de entregas.</span>
                                  </div>
                               </div>
                            </Col>
                            <Col md={12}>
-                              <div className="d-flex align-items-center mb-4 ">
-                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
-                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                              <div className="d-flex align-items-center mb-4">
+                                 <div className="rounded-circle bg-yellow mr-3 me-4">
+                                    <Image src="img/svg-vantagens/ICON-2-VANTAGENS.svg" width="90px" height="auto" alt="Descrição da Imagem" />
                                  </div>
                                  <div>
-                                    <h5 className="">Aumente a fidelidade ao seu negócio</h5>
+                                    <h5 className="custom-bold">Aumente a fidelidade ao seu negócio</h5>
                                     <span style={{ fontWeight: 300 }}>Utilize os descontos e seu programa de fidelização para fidelizar seus clientes.</span>
                                  </div>
                               </div>
                            </Col>
                            <Col md={12}>
                               <div className="d-flex align-items-center">
-                                 <div className="rounded-circle bg-yellow p-4 mr-3 me-4">
-                                    <span className="text-white">😍</span> {/* Coloque o texto desejado dentro do círculo */}
+                                 <div className="rounded-circle bg-yellow mr-3 me-4">
+                                    <Image src="img/svg-vantagens/ICON-3-VANTAGENS.svg" width="90px" height="auto" alt="Descrição da Imagem" />
                                  </div>
                                  <div>
-                                    <h5 className="">Ganhe tempo em cada pedido</h5>
+                                    <h5 className="custom-bold">Ganhe tempo em cada pedido</h5>
                                     <span style={{ fontWeight: 300 }}>Receba os seus pedidos sem demorar em atendimentos prolongados.</span>
                                  </div>
                               </div>
@@ -261,6 +261,7 @@ const Home = () => {
             </Container>
          </Container>
 
+
          <Container className="bg-tipo" fluid>
             <Container className="pt-5 mt-5">
                <Row>
@@ -271,9 +272,9 @@ const Home = () => {
                      <div className="mt-md-5">
                         <Col xs={12} md={10}>
                            <h1 className="mb-4">
-                              <span className="text-darkred">Tipos de negócio que atendemos</span>
+                              <span className="text-darkred custom-bold">Tipos de negócio que atendemos</span>
                            </h1>
-                           <p>Nós somos especialistas em tornar a vida mais fácil para os negócios! Com a PedeMais.Ai facilitamos o atendimento ao cliente e agilizamos suas operações, sem complicações. E não importa se você tem uma hamburgueria, uma pizzaria ou até uma sorveteria, nós estamos aqui para te ajudar a crescer!</p>
+                           <p>Somos especialistas em tornar a vida mais fácil para os negócios! Com a PedeMais.Ai facilitamos o atendimento ao cliente e agilizamos suas operações, sem complicações. E não importa se você tem uma hamburgueria, uma pizzaria ou uma sorveteria, nós estamos aqui para te ajudar a crescer!</p>
                         </Col>
                         <Row className="text-darkred">
                            <Col xs={6} md={4}>
@@ -324,8 +325,8 @@ const Home = () => {
                                  </li>
                               </ul>
                            </Col>
-                           <Col xs={6} md={4}>
-                              <ul className="list-unstyled text-small">
+                           <Col xs={12} md={4}>
+                              <ul className="list-unstyled text-small d-none d-md-block">
                                  <li>
                                     <div className="d-flex align-items-center mb-3">
                                        <Image src="img/svg-restaurantes/sorb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Sorveteria</span>
@@ -347,6 +348,34 @@ const Home = () => {
                                     </div>
                                  </li>
                               </ul>
+                                 <ul className="list-unstyled text-small d-md-none">
+                                    <Row>
+                                    <Col xs={6}>
+                                    <li>
+                                       <div className="d-flex align-items-center mb-3">
+                                          <Image src="img/svg-restaurantes/sorb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Sorveteria</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div className="d-flex align-items-center mb-3">
+                                          <Image src="img/svg-restaurantes/bolos.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Casa de bolos</span>
+                                       </div>
+                                    </li>
+                                    </Col>
+                                    <Col xs={6}>
+                                    <li>
+                                       <div className="d-flex align-items-center mb-3">
+                                          <Image src="img/svg-restaurantes/churrasco.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Churrascaria</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div className="d-flex align-items-center">
+                                          <Image src="img/svg-restaurantes/frutos-mar.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">E muito mais</span>
+                                       </div>
+                                    </li>
+                                    </Col>
+                                    </Row>
+                                 </ul>
                            </Col>
                         </Row>
                      </div>
@@ -383,12 +412,8 @@ const Home = () => {
                         <ul className="list-unstyled mt-3 mb-4">
                            <li>Para atender às necessidades de pequenos restaurantes e startups, o Plano Essencial oferece integração com WhatsApp e cardápio digital.</li>
                         </ul>
-
-                        <Button variant="outline-primary" size="lg">Testar grátis</Button>
+                        <Button variant="outline-primary w-100" size="lg">Iniciar teste grátis</Button>
                      </Card.Body>
-
-
-
                   </Card>
                </Col>
                <Col md={4}>
@@ -405,7 +430,7 @@ const Home = () => {
                            <li>Para restaurantes em crescimento, inclui integração com WhatsApp e cardápio digital, além de funcionalidades avançadas.</li>
                         </ul>
 
-                        <Button variant="primary" size="lg">Testar grátis</Button>
+                        <Button variant="primary w-100" size="lg">Iniciar teste grátis</Button>
                      </Card.Body>
                   </Card>
                </Col>
@@ -423,7 +448,7 @@ const Home = () => {
                            <li>Projetado para grandes cadeias de restaurantes, oferece integração com WhatsApp e cardápio digital, personalização avançada e suporte 24/7.</li>
                         </ul>
 
-                        <Button variant="outline-primary" size="lg">Testar grátis</Button>
+                        <Button variant="outline-primary w-100" size="lg">Iniciar teste grátis</Button>
                      </Card.Body>
                   </Card>
                </Col>

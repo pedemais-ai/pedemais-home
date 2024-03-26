@@ -199,3 +199,8 @@ h6 {
     rgba(255, 255, 255, 1) 60%
   );
 }
+
+.navbar-blur {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo com transparência */
+    backdrop-filter: blur(8px); /* Efeito de desfoque */
+  }

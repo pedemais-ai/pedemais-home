@@ -49,11 +49,11 @@ const WordAnimation: React.FC = () => {
 const Home = () => {
    return (
       <>
-         <Navbar bg="light" expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm" style={{ backgroundColor: 'white' }}>
+         <Navbar expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm navbar-blur">
             <Container>
                <Navbar.Brand href="#" className="font-weight-normal">
                   <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-block d-md-none" width="200px" height="auto" fluid /> {/* Para dispositivos móveis */}
-                  <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-none d-md-block" width="303px" height="59px" fluid /> {/* Para outras resoluções */}
+                  <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-none d-md-block" width="280px" height="auto" fluid /> {/* Para outras resoluções */}
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 

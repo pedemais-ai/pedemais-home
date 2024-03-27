@@ -7,6 +7,13 @@
 }
 
 @font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -45,8 +52,8 @@ html {
 }
 
 .container li {
-    font-family: Montserrat;
-  }
+  font-family: Montserrat;
+}
 
 .pricing-header {
   max-width: 700px;
@@ -99,6 +106,50 @@ h6 {
   min-height: 900px;
 }
 
+@media (min-width: 1100px) {
+  .comofunciona-botoes {
+    display: block;
+    position: absolute;
+    bottom: -39px; /* Move a imagem para 50% da altura do cabeçalho */
+    left: 50%; /* Move a imagem para 50% da largura do cabeçalho */
+    transform: translate(
+      -50%,
+      0%
+    ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
+    height: auto;
+    z-index: 0;
+  }
+}
+
+.logo-pen {
+    display: block;
+    position: absolute;
+    top: -80px; /* Move a imagem para 50% da altura do cabeçalho */
+    margin-left:50px;
+    transform: translate(
+      -50%,
+      0%
+    ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
+    height: auto;
+    z-index: 0;
+  }
+
+@media (min-width: 768px) {
+  .logo-pen {
+    display: block;
+    position: absolute;
+    top: -55px; /* Move a imagem para 50% da altura do cabeçalho */
+    margin-left:50px;
+    transform: translate(
+      -50%,
+      0%
+    ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
+    height: auto;
+    z-index: 0;
+    width:200px;
+  }
+}
+
 .bg-header img {
   display: none;
 }
@@ -124,15 +175,15 @@ h6 {
 @media (min-width: 1500px) and (max-width: 1680px) {
   .bg-header img {
     bottom: -117px; /* Move a imagem para 50% da altura do cabeçalho */
-    width: 260px;
+    width: 250px;
   }
 }
 
 /* Para larguras de tela de 1600px ou maiores */
 @media (min-width: 1680px) {
   .bg-header img {
-    bottom: -157px; /* Move a imagem para 50% da altura do cabeçalho */
-    width: 350px;
+    bottom: -134px; /* Move a imagem para 50% da altura do cabeçalho */
+    width: 300px;
   }
 }
 
@@ -152,14 +203,13 @@ h6 {
 .btn-primary {
   font-family: Montserrat;
   color: #000;
-  background-color: #ffbc00; /* Azul mais chamativo e claro para os botões */
-  border: none;
-  font-weight: 500;
+  background-color: #f4af00; /* Azul mais chamativo e claro para os botões */
+  border: 1px;
   border-radius: 20px;
 }
 
 .btn-primary:hover {
-  background-color: #e7ab05; /* Mantendo a mesma cor de fundo quando hover */
+  background-color: #ffbb00; /* Mantendo a mesma cor de fundo quando hover */
   color: #000;
 }
 
@@ -168,15 +218,29 @@ h6 {
   border-color: #f7b300;
   font-weight: 300;
   border-radius: 20px;
-  color: #000;
+  color: #FFF;
 }
 
 .btn-outline-primary:hover {
   background-color: unset;
   border-color: #fff;
   border-radius: 20px;
-  color: #000;
 }
+
+.btn-outline-secondary {
+    font-family: Montserrat;
+    border-color: #f7b300;
+    font-weight: 300;
+    border-radius: 20px;
+    color: #000;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: unset;
+    border-color: #000;
+    border-radius: 20px;
+    color: #000;
+  }
 
 /* Outras configurações de estilo que você pode ajustar conforme necessário */
 .custom-bold {
@@ -201,6 +265,38 @@ h6 {
 }
 
 .navbar-blur {
-    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo com transparência */
-    backdrop-filter: blur(8px); /* Efeito de desfoque */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Cor de fundo com transparência */
+  backdrop-filter: blur(8px); /* Efeito de desfoque */
+}
+
+.impulsione {
+    border-radius: 40px;
+    background-image: url("/img/SETAS.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right 20px;
+    background-size:50%;
+}
+
+@media (min-width: 992px) {
+    .impulsione {
+        height:600px;
+        background-image: url("/img/SETAS.svg");
+        background-repeat: no-repeat;
+        background-position: 0px 80px;
+        background-size:unset;
+    }
+
+    .impulsione .impulsione-col1 {
+        margin-top:160px;
+    }
   }
+
+.experimente {
+    border-radius: 40px;
+    background-color:#FCBD21;
+}

@@ -7,10 +7,10 @@
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
@@ -102,8 +102,15 @@ h6 {
   background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
   background-position: top center; /* Centraliza a imagem */
   position: relative; /* Define a posição relativa para permitir o posicionamento absoluto do conteúdo */
-  margin-top: 102px;
-  min-height: 900px;
+}
+
+@media (min-width: 1500px) {
+  .bg-comofunciona {
+    margin-top: 102px;
+    min-height: 900px;
+    margin-top: 300px;
+    padding-top: 350px;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -122,31 +129,31 @@ h6 {
 }
 
 .logo-pen {
-    display: block;
-    position: absolute;
-    top: -80px; /* Move a imagem para 50% da altura do cabeçalho */
-    margin-left:50px;
-    transform: translate(
-      -50%,
-      0%
-    ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
-    height: auto;
-    z-index: 0;
-  }
+  display: block;
+  position: absolute;
+  top: -80px; /* Move a imagem para 50% da altura do cabeçalho */
+  margin-left: 50px;
+  transform: translate(
+    -50%,
+    0%
+  ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
+  height: auto;
+  z-index: 0;
+}
 
 @media (min-width: 768px) {
   .logo-pen {
     display: block;
     position: absolute;
     top: -55px; /* Move a imagem para 50% da altura do cabeçalho */
-    margin-left:50px;
+    margin-left: 50px;
     transform: translate(
       -50%,
       0%
     ); /* Translada a imagem de volta em -50% de sua própria largura e altura, efetivamente a centralizando */
     height: auto;
     z-index: 0;
-    width:200px;
+    width: 200px;
   }
 }
 
@@ -218,7 +225,7 @@ h6 {
   border-color: #f7b300;
   font-weight: 300;
   border-radius: 20px;
-  color: #FFF;
+  color: #fff;
 }
 
 .btn-outline-primary:hover {
@@ -228,19 +235,19 @@ h6 {
 }
 
 .btn-outline-secondary {
-    font-family: Montserrat;
-    border-color: #f7b300;
-    font-weight: 300;
-    border-radius: 20px;
-    color: #000;
-  }
-  
-  .btn-outline-secondary:hover {
-    background-color: unset;
-    border-color: #000;
-    border-radius: 20px;
-    color: #000;
-  }
+  font-family: Montserrat;
+  border-color: #f7b300;
+  font-weight: 300;
+  border-radius: 20px;
+  color: #000;
+}
+
+.btn-outline-secondary:hover {
+  background-color: unset;
+  border-color: #000;
+  border-radius: 20px;
+  color: #000;
+}
 
 /* Outras configurações de estilo que você pode ajustar conforme necessário */
 .custom-bold {
@@ -275,28 +282,51 @@ h6 {
 }
 
 .impulsione {
-    border-radius: 40px;
-    background-image: url("/img/SETAS.svg");
-    background-repeat: no-repeat;
-    background-position: bottom right 20px;
-    background-size:50%;
+  border-radius: 40px;
+  background-image: url("/img/SETAS.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right 20px;
+  background-size: 50%;
 }
 
 @media (min-width: 992px) {
-    .impulsione {
-        height:600px;
-        background-image: url("/img/SETAS.svg");
-        background-repeat: no-repeat;
-        background-position: 0px 80px;
-        background-size:unset;
-    }
-
-    .impulsione .impulsione-col1 {
-        margin-top:160px;
-    }
+  .impulsione {
+    height: 600px;
+    background-image: url("/img/SETAS.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 80px;
+    background-size: unset;
   }
 
+  .impulsione .impulsione-col1 {
+    margin-top: 160px;
+  }
+}
+
 .experimente {
-    border-radius: 40px;
-    background-color:#FCBD21;
+  border-radius: 40px;
+  background-color: #fcbd21;
+}
+
+@media (min-width: 1500px) {
+  .impulsione {
+    height: 600px;
+    background-image: url("/img/SETAS.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 80px;
+    background-size: unset;
+    position: absolute;
+    margin: 0 auto;
+    top: -300px;
+    width: 1440px;
+  }
+
+  .impulsione .impulsione-col1 {
+    margin-top: 160px;
+  }
+}
+
+.experimente {
+  border-radius: 40px;
+  background-color: #fcbd21;
 }

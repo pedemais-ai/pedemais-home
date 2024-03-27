@@ -125,7 +125,7 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Container className="pt-5 mt-5" fluid>
+         <Container className="pt-5 mt-5 pb-5" fluid>
             <Container>
                <Row>
                   <Col lg={6} md={4}>
@@ -179,38 +179,40 @@ const Home = () => {
             </Container>
          </Container>
 
-         <Container className="shadow impulsione p-5 mt-5">
-            <Row>
-               <Col lg={8} className="ps-lg-5">
-                  <div className="impulsione-col1">
-                     <div className="pb-5">
-                        <h1 className="text-darkred bg-white display-5 custom-bold">Impulsione suas vendas!</h1>
-                     </div>
-                     <Row>
-                        <Col lg={4}>
-                           <h1 className="text-yellow display-3 custom-bold">10x</h1>
-                           <h4>Atendimento 10x<br />
-                              mais  rápido</h4>
-                        </Col>
-                        <Col lg={4}>
-                           <h1 className="text-yellow display-3 custom-bold">60%</h1>
-                           <h4>Incremento de até 60%
-                              nos pedidos</h4>
-                        </Col>
-                        <Col lg={4}>
-                           <h1 className="text-yellow display-3 custom-bold">99%</h1>
-                           <h4>de respostas garantidas</h4>
-                        </Col>
-                     </Row>
-                  </div>
-               </Col>
-               <Col lg={4}>
-                  <Image className="ms-lg-5" src="img/robo.png" alt="Descrição da Imagem" width="250px" height="auto" fluid />
-               </Col>
-            </Row>
-         </Container>
-
          <Container className="bg-comofunciona border-bottom" fluid>
+            <div className="d-flex justify-content-center align-items-center">
+               <div className="shadow impulsione p-5 mt-5 bg-white">
+                  <Row>
+                     <Col lg={8} className="ps-lg-5">
+                        <div className="impulsione-col1">
+                           <div className="pb-5">
+                              <h1 className="text-darkred bg-white display-5 custom-bold">Impulsione suas vendas!</h1>
+                           </div>
+                           <Row>
+                              <Col lg={4}>
+                                 <h1 className="text-yellow display-3 custom-bold">10x</h1>
+                                 <h4>Atendimento 10x <br className="d-none d-xl-block"></br>
+                                    mais  rápido</h4>
+                              </Col>
+                              <Col lg={4}>
+                                 <h1 className="text-yellow display-3 custom-bold">60%</h1>
+                                 <h4>Incremento de até 60%
+                                    nos pedidos</h4>
+                              </Col>
+                              <Col lg={4}>
+                                 <h1 className="text-yellow display-3 custom-bold">99%</h1>
+                                 <h4>de respostas garantidas</h4>
+                              </Col>
+                           </Row>
+                        </div>
+                     </Col>
+                     <Col lg={4}>
+                        <Image className="ms-lg-5" src="img/robo.png" alt="Descrição da Imagem" width="250px" height="auto" fluid />
+                     </Col>
+                  </Row>
+               </div>
+            </div>
+
             <Container className="pt-5 mt-5">
                <h1 className="text-center custom-bold display-4"><span className="text-darkred">Como funciona o</span> <span className="text-yellow">#delivery</span></h1>
                <Row className="text-center">

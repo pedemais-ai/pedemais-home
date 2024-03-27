@@ -223,6 +223,7 @@ h6 {
 .btn-outline-primary {
   font-family: Montserrat;
   border-color: #f7b300;
+  border-width: 2px;
   font-weight: 300;
   border-radius: 20px;
   color: #fff;
@@ -237,6 +238,7 @@ h6 {
 .btn-outline-secondary {
   font-family: Montserrat;
   border-color: #f7b300;
+  border-width: 2px;
   font-weight: 300;
   border-radius: 20px;
   color: #000;
@@ -303,9 +305,17 @@ h6 {
   }
 }
 
-.experimente {
-  border-radius: 40px;
-  background-color: #fcbd21;
+@media (min-width: 1500px) {
+  .container-experimente {
+    margin-bottom: 250px;
+  }
+
+  .experimente {
+    border-radius: 40px;
+    background-color: #fcbd21;
+    position: absolute;
+    width: 1440px;
+  }
 }
 
 @media (min-width: 1500px) {

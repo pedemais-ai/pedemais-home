@@ -134,7 +134,7 @@ const Home = () => {
                   <Col lg={6} md={8} className="mt-md-0 mt-4 ps-md-5">
                      <div className="mt-md-5">
                         <h1 className="mb-4">
-                           <span className="text-darkred custom-bold">Compreenda as necessidades dos clientes e agilize os pedidos</span>
+                           <span className="text-darkred custom-bold">Acabe com os prejuízos por demora no atendimento</span>
                         </h1>
                         <p>Utilize a automação do WhatsApp, impulsionada pela nossa IA, para responder a perguntas frequentes, facilitando aos clientes a realização de pedidos e garantindo uma experiência excepcional!</p>
 
@@ -179,7 +179,7 @@ const Home = () => {
             </Container>
          </Container>
 
-         <Container className="bg-comofunciona border-bottom" fluid>
+         <Container className="bg-comofunciona border-bottom pb-lg-5" fluid>
             <div className="d-flex justify-content-center align-items-center">
                <div className="shadow impulsione p-5 mt-5 bg-white">
                   <Row>
@@ -214,27 +214,48 @@ const Home = () => {
             </div>
 
             <Container className="pt-5 mt-5">
-               <h1 className="text-center custom-bold display-4"><span className="text-darkred">Como funciona o</span> <span className="text-yellow">#delivery</span></h1>
+               <h1 className="text-center custom-bold display-4"><span className="text-darkred">Como funciona o modo<br className="d-none d-xl-block"></br></span> <span className="text-yellow">#delivery</span></h1>
                <Row className="text-center">
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
-                        <Image src="img/comofunciona-atendimento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
-                        <h5 className="mb-3">1. Atendimento WhatsApp</h5>
-                        <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
+                        <Image className="pb-4" src="img/comofunciona-atendimento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <Row>
+                           <Col className="text-end" md={3} xs={1}>
+                              <h5 className="mb-3 custom-bold h4 text-black"><span className="text-yellow h2 fw-semibold">01</span></h5>
+                           </Col>
+                           <Col className="text-start" md={9} xs={11}>
+                              <h5 className="mb-3 custom-bold h4 text-black">Cardápio digital</h5>
+                              <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
+                           </Col>
+                        </Row>
                      </div>
                   </Col>
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
-                        <Image src="img/comofunciona-cardapio.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
-                        <h5 className="mb-3">2. Pedido no Cardápio Digital</h5>
-                        <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
+                        <Image className="pb-4" src="img/comofunciona-cardapio.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <Row>
+                           <Col className="text-end" md={3} xs={1}>
+                              <h5 className="mb-3 custom-bold h4 text-black"><span className="text-yellow h2 fw-semibold">02</span></h5>
+                           </Col>
+                           <Col className="text-start" md={9} xs={11}>
+                              <h5 className="mb-3 custom-bold h4 text-black">Cardápio digital</h5>
+                              <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
+                           </Col>
+                        </Row>
                      </div>
                   </Col>
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
-                        <Image src="img/comofunciona-gerenciamento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
-                        <h5 className="mb-3">3. Gerenciamento de Pedidos</h5>
-                        <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br /><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
+                        <Image className="pb-4" src="img/comofunciona-gerenciamento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <Row>
+                           <Col className="text-end" md={3} xs={1}>
+                              <h5 className="mb-3 custom-bold h4 text-black"><span className="text-yellow h2 fw-semibold">03</span></h5>
+                           </Col>
+                           <Col className="text-start" md={9} xs={11}>
+                              <h5 className="mb-3 custom-bold h4 text-black">Gerenciamento</h5>
+                              <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br /><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
+                           </Col>
+                        </Row>
                      </div>
                   </Col>
                </Row>
@@ -426,23 +447,27 @@ const Home = () => {
             </Container>
          </Container>
 
-         <Container className="experimente p-5 mt-5">
-            <Row>
-               <Col lg={7} className="ps-lg-5">
-                  <div className="pb-4">
-                     <div className="pb-5">
-                        <h1 className="text-white display-5 custom-bold">Experimente por 7 dias<br />e veja os resultados!</h1>
-                     </div>
-                     <h4>Descubra o motivo pelo qual milhares de clientes migraram para o sistema <span className="fw-semibold">PedeMais.Ai</span>. Realize um teste gratuito
-                        de sete dias e experimente os resultados em primeira mão.</h4>
-                  </div>
-                  <Button className="p-3 bg-black text-white" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
-                  <Button className="ms-md-3 p-3 bg-white" variant="outline-secondary" size="lg">Fale com um consultor &rarr;</Button>
-               </Col>
-               <Col lg={5}>
-                  <Image className="ms-lg-5" src="img/frame.png" alt="Descrição da Imagem" width="624px" height="412px" fluid />
-               </Col>
-            </Row>
+         <Container className="pb-5 container-experimente">
+            <div className="d-flex justify-content-center align-items-center">
+               <div className="experimente p-5 mt-5">
+                  <Row>
+                     <Col lg={7} className="ps-lg-5">
+                        <div className="pb-4">
+                           <div className="pb-5">
+                              <h1 className="text-white display-5 custom-bold">Experimente por 7 dias<br className="d-none d-xl-block"></br>e veja os resultados!</h1>
+                           </div>
+                           <h4>Descubra o motivo pelo qual milhares de clientes migraram para o sistema <span className="fw-semibold">PedeMais.Ai</span>. Realize um teste gratuito
+                              de sete dias e experimente os resultados em primeira mão.</h4>
+                        </div>
+                        <Button className="p-3 bg-black text-white" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
+                        <Button className="ms-md-3 p-3 bg-white" variant="outline-secondary" size="lg">Fale com um consultor &rarr;</Button>
+                     </Col>
+                     <Col lg={5}>
+                        <Image className="ms-lg-5" src="img/frame.png" alt="Descrição da Imagem" width="624px" height="412px" fluid />
+                     </Col>
+                  </Row>
+               </div>
+            </div>
          </Container>
 
          <Container>

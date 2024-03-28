@@ -70,7 +70,7 @@ const Home = () => {
                         <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
                         <Nav.Link href="#" className="text-dark">Fale Conosco</Nav.Link>
                         <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
-                        <Nav.Link href="#" className="btn btn-primary fs-5 px-4 py-3 ml-2 ms-md-3">Iniciar teste grátis &rarr;</Nav.Link>
+                        <Nav.Link href="#" className="btn btn-primary fs-5 px-4 py-3 ml-2 fw-semibold ms-md-3">Iniciar teste grátis &rarr;</Nav.Link>
                      </Nav>
                   </Col>
                </Navbar.Collapse>
@@ -84,8 +84,8 @@ const Home = () => {
                   <div>
                      <WordAnimation />
                      <h3 className="text-white pb-md-5">Aumente suas vendas com uma<br />plataforma simples e prática para seus clientes.</h3>
-                     <Button className="p-3" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
-                     <Button className="ms-md-3 p-3 text-white" variant="outline-primary" size="lg">Fale com um consultor &rarr;</Button>
+                     <Button className="p-3" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button><br />
+                     <Button className=" mt-3 p-3" variant="outline-primary" size="lg">Fale com um consultor &rarr;</Button>
                   </div>
                </Col> {/* Second Column */}
                <Col md={5}>
@@ -125,16 +125,16 @@ const Home = () => {
             </Row>
          </Container>
 
-         <Container className="pt-5 mt-5" fluid>
+         <Container className="pt-5 mt-5 pb-5" fluid>
             <Container>
                <Row>
-                  <Col md={6}>
+                  <Col lg={6} md={4}>
                      <Image src="/img/phone.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
-                  <Col md={6} className="mt-md-0 mt-4 ps-md-5">
+                  <Col lg={6} md={8} className="mt-md-0 mt-4 ps-md-5">
                      <div className="mt-md-5">
                         <h1 className="mb-4">
-                           <span className="text-darkred custom-bold">Compreenda as necessidades dos clientes e agilize os pedidos</span>
+                           <span className="text-darkred custom-bold">Acabe com os prejuízos por demora no atendimento</span>
                         </h1>
                         <p>Utilize a automação do WhatsApp, impulsionada pela nossa IA, para responder a perguntas frequentes, facilitando aos clientes a realização de pedidos e garantindo uma experiência excepcional!</p>
 
@@ -179,39 +179,98 @@ const Home = () => {
             </Container>
          </Container>
 
-         <Container className="bg-comofunciona border-bottom" fluid>
+         <Container className="bg-comofunciona border-bottom pb-lg-5" fluid>
+            <div className="d-flex justify-content-center align-items-center">
+               <div className="shadow impulsione p-5 mt-5 bg-white">
+                  <Row>
+                     <Col lg={8} className="ps-lg-5">
+                        <div className="impulsione-col1">
+                           <div className="pb-5">
+                              <h1 className="text-darkred bg-white display-5 custom-bold">Impulsione suas vendas!</h1>
+                           </div>
+                           <Row>
+                              <Col lg={4}>
+                                 <h1 className="text-yellow display-3 custom-bold">10x</h1>
+                                 <h4>Atendimento 10x <br className="d-none d-xl-block"></br>
+                                    mais  rápido</h4>
+                              </Col>
+                              <Col lg={4}>
+                                 <h1 className="text-yellow display-3 custom-bold">60%</h1>
+                                 <h4>Incremento de até 60%
+                                    nos pedidos</h4>
+                              </Col>
+                              <Col lg={4}>
+                                 <h1 className="text-yellow display-3 custom-bold">99%</h1>
+                                 <h4>de respostas garantidas</h4>
+                              </Col>
+                           </Row>
+                        </div>
+                     </Col>
+                     <Col lg={4}>
+                        <Image className="ms-lg-5" src="img/robo.png" alt="Descrição da Imagem" width="250px" height="auto" fluid />
+                     </Col>
+                  </Row>
+               </div>
+            </div>
+
             <Container className="pt-5 mt-5">
-               <h1 className="text-center custom-bold display-4"><span className="text-darkred">Como funciona o</span> <span className="text-yellow">#delivery</span></h1>
+               <h1 className="text-center custom-bold display-4"><span className="text-darkred">Como funciona o modo<br className="d-none d-xl-block"></br></span> <span className="text-yellow">#delivery</span></h1>
                <Row className="text-center">
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
-                        <Image src="img/comofunciona-atendimento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
-                        <h5 className="mb-3">1. Atendimento WhatsApp</h5>
-                        <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
+                        <Image className="pb-4" src="img/comofunciona-atendimento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <Row>
+                           <Col className="text-end" md={3} xs={1}>
+                              <h5 className="mb-3 custom-bold h4 text-black"><span className="text-yellow h2 fw-semibold">01</span></h5>
+                           </Col>
+                           <Col className="text-start" md={9} xs={11}>
+                              <h5 className="mb-3 custom-bold h4 text-black">Cardápio digital</h5>
+                              <p>Quando o cliente chega até seu WhatsApp querendo fazer um pedido o link do seu cardápio digital é enviado. O robô também pode ajudar a solucionar problemas, mas prontamente acionará um humano por meio de aviso no seu dashboard se necessário.</p>
+                           </Col>
+                        </Row>
                      </div>
                   </Col>
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
-                        <Image src="img/comofunciona-cardapio.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
-                        <h5 className="mb-3">2. Pedido no Cardápio Digital</h5>
-                        <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
+                        <Image className="pb-4" src="img/comofunciona-cardapio.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <Row>
+                           <Col className="text-end" md={3} xs={1}>
+                              <h5 className="mb-3 custom-bold h4 text-black"><span className="text-yellow h2 fw-semibold">02</span></h5>
+                           </Col>
+                           <Col className="text-start" md={9} xs={11}>
+                              <h5 className="mb-3 custom-bold h4 text-black">Cardápio digital</h5>
+                              <p>O cardápio digital está otimizado para converter a venda sem o cliente precisar se cadastrar e consegue se comunicar com o WhatsApp do cliente. <i>(Ex: pedido efetuado, estorno pix, etc)</i></p>
+                           </Col>
+                        </Row>
                      </div>
                   </Col>
                   <Col md={4}>
                      <div className="p-4 rounded mt-3 mt-md-5">
-                        <Image src="img/comofunciona-gerenciamento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
-                        <h5 className="mb-3">3. Gerenciamento de Pedidos</h5>
-                        <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br /><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
+                        <Image className="pb-4" src="img/comofunciona-gerenciamento.png" alt="Descrição da Imagem" width="300px" height="auto" fluid />
+                        <Row>
+                           <Col className="text-end" md={3} xs={1}>
+                              <h5 className="mb-3 custom-bold h4 text-black"><span className="text-yellow h2 fw-semibold">03</span></h5>
+                           </Col>
+                           <Col className="text-start" md={9} xs={11}>
+                              <h5 className="mb-3 custom-bold h4 text-black">Gerenciamento</h5>
+                              <p>O pedido realizado é enviado para sua tela de gestão totalmente intuitiva e o sistema notifica o cliente pelo WhatsApp sobre o andamento do pedido. <br /><i>(Ex: pedido em preparaçao, saiu pra entrega, etc)</i></p>
+                           </Col>
+                        </Row>
                      </div>
                   </Col>
                </Row>
             </Container>
+
+            <div className="comofunciona-botoes text-center mb-5 mb-md-0">
+               <Button className="m-2 p-3" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
+               <Button className="m-2 ms-md-3 p-3 bg-white" variant="outline-secondary" size="lg">Fale com um consultor &rarr;</Button>
+            </div>
          </Container>
 
          <Container className="pt-5 mt-5" fluid>
             <Container>
                <Row>
-                  <Col md={5} className="d-flex align-items-center pe-md-5">
+                  <Col lg={5} className="d-flex align-items-center pe-md-5">
                      <div>
                         <h1 className="custom-bold">
                            <span className="text-yellow">Seus clientes<br />pedem pelo WhatsApp,<br /></span>
@@ -254,7 +313,7 @@ const Home = () => {
                         </Row>
                      </div>
                   </Col>
-                  <Col md={7} className="mt-md-0 mt-4 d-flex justify-content-center align-items-center">
+                  <Col lg={7} className="mt-md-0 mt-4 d-flex justify-content-center align-items-center">
                      <Image src="/img/pedido-whatsapp.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
                </Row>
@@ -266,18 +325,22 @@ const Home = () => {
             <Container className="pt-5 mt-5">
                <Row>
                   <Col md={4}>
-                     <Image src="/img/phone.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
+                     <Image className="d-none d-md-block" src="/img/phone.png" alt="Descrição da Imagem" width="100%" height="100%" fluid />
                   </Col>
-                  <Col md={8} className="mt-md-0 mt-4 ps-md-5">
-                     <div className="mt-md-5">
+                  <Col md={8} className="mt-md-0 mt-md-4 ps-md-5">
+
+                     <div className="mt-md-5 pt-md-5 pt-3">
                         <Col xs={12} md={10}>
-                           <h1 className="mb-4">
-                              <span className="text-darkred custom-bold">Tipos de negócio que atendemos</span>
-                           </h1>
-                           <p>Somos especialistas em tornar a vida mais fácil para os negócios! Com a PedeMais.Ai facilitamos o atendimento ao cliente e agilizamos suas operações, sem complicações. E não importa se você tem uma hamburgueria, uma pizzaria ou uma sorveteria, nós estamos aqui para te ajudar a crescer!</p>
+                           <Image className="logo-pen" src="/img/logo-pen.png" alt="Descrição da Imagem" width="100px" height="100%" fluid />
+                           <div className="pt-md-5">
+                              <h1 className="mb-4">
+                                 <span className="text-darkred custom-bold">Tipos de negócio que atendemos</span>
+                              </h1>
+                              <p>Somos especialistas em tornar a vida mais fácil para os negócios! Com a PedeMais.Ai facilitamos o atendimento ao cliente e agilizamos suas operações, sem complicações. E não importa se você tem uma hamburgueria, uma pizzaria ou uma sorveteria, nós estamos aqui para te ajudar a crescer!</p>
+                           </div>
                         </Col>
                         <Row className="text-darkred">
-                           <Col xs={6} md={4}>
+                           <Col xs={6} xl={4}>
                               <ul className="list-unstyled text-small">
                                  <li>
                                     <div className="d-flex align-items-center mb-3">
@@ -301,7 +364,7 @@ const Home = () => {
                                  </li>
                               </ul>
                            </Col>
-                           <Col xs={6} md={4}>
+                           <Col xs={6} xl={4}>
                               <ul className="list-unstyled text-small">
                                  <li>
                                     <div className="d-flex align-items-center mb-3">
@@ -325,8 +388,8 @@ const Home = () => {
                                  </li>
                               </ul>
                            </Col>
-                           <Col xs={12} md={4}>
-                              <ul className="list-unstyled text-small d-none d-md-block">
+                           <Col xs={12} xl={4}>
+                              <ul className="list-unstyled text-small d-none d-xl-block">
                                  <li>
                                     <div className="d-flex align-items-center mb-3">
                                        <Image src="img/svg-restaurantes/sorb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Sorveteria</span>
@@ -348,40 +411,63 @@ const Home = () => {
                                     </div>
                                  </li>
                               </ul>
-                                 <ul className="list-unstyled text-small d-md-none">
-                                    <Row>
+                              <ul className="list-unstyled text-small d-xl-none">
+                                 <Row>
                                     <Col xs={6}>
-                                    <li>
-                                       <div className="d-flex align-items-center mb-3">
-                                          <Image src="img/svg-restaurantes/sorb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Sorveteria</span>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div className="d-flex align-items-center mb-3">
-                                          <Image src="img/svg-restaurantes/bolos.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Casa de bolos</span>
-                                       </div>
-                                    </li>
+                                       <li>
+                                          <div className="d-flex align-items-center mb-3">
+                                             <Image src="img/svg-restaurantes/sorb.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Sorveteria</span>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div className="d-flex align-items-center mb-3">
+                                             <Image src="img/svg-restaurantes/bolos.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Casa de bolos</span>
+                                          </div>
+                                       </li>
                                     </Col>
                                     <Col xs={6}>
-                                    <li>
-                                       <div className="d-flex align-items-center mb-3">
-                                          <Image src="img/svg-restaurantes/churrasco.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Churrascaria</span>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div className="d-flex align-items-center">
-                                          <Image src="img/svg-restaurantes/frutos-mar.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">E muito mais</span>
-                                       </div>
-                                    </li>
+                                       <li>
+                                          <div className="d-flex align-items-center mb-3">
+                                             <Image src="img/svg-restaurantes/churrasco.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">Churrascaria</span>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div className="d-flex align-items-center">
+                                             <Image src="img/svg-restaurantes/frutos-mar.svg" alt="Descrição da Imagem" width="55px" height="auto" fluid /> <span className="ps-md-2 fs-5">E muito mais</span>
+                                          </div>
+                                       </li>
                                     </Col>
-                                    </Row>
-                                 </ul>
+                                 </Row>
+                              </ul>
                            </Col>
                         </Row>
                      </div>
                   </Col>
                </Row>
             </Container>
+         </Container>
+
+         <Container className="pb-5 container-experimente">
+            <div className="d-flex justify-content-center align-items-center">
+               <div className="experimente p-5 mt-5">
+                  <Row>
+                     <Col lg={7} className="ps-lg-5">
+                        <div className="pb-4">
+                           <div className="pb-5">
+                              <h1 className="text-white display-5 custom-bold">Experimente por 7 dias<br className="d-none d-xl-block"></br>e veja os resultados!</h1>
+                           </div>
+                           <h4>Descubra o motivo pelo qual milhares de clientes migraram para o sistema <span className="fw-semibold">PedeMais.Ai</span>. Realize um teste gratuito
+                              de sete dias e experimente os resultados em primeira mão.</h4>
+                        </div>
+                        <Button className="p-3 bg-black text-white" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button>
+                        <Button className="ms-md-3 p-3 bg-white" variant="outline-secondary" size="lg">Fale com um consultor &rarr;</Button>
+                     </Col>
+                     <Col lg={5}>
+                        <Image className="ms-lg-5" src="img/frame.png" alt="Descrição da Imagem" width="624px" height="412px" fluid />
+                     </Col>
+                  </Row>
+               </div>
+            </div>
          </Container>
 
          <Container>
@@ -412,7 +498,7 @@ const Home = () => {
                         <ul className="list-unstyled mt-3 mb-4">
                            <li>Para atender às necessidades de pequenos restaurantes e startups, o Plano Essencial oferece integração com WhatsApp e cardápio digital.</li>
                         </ul>
-                        <Button variant="outline-primary w-100" size="lg">Iniciar teste grátis</Button>
+                        <Button variant="outline-secondary w-100" size="lg">Iniciar teste grátis</Button>
                      </Card.Body>
                   </Card>
                </Col>
@@ -448,7 +534,7 @@ const Home = () => {
                            <li>Projetado para grandes cadeias de restaurantes, oferece integração com WhatsApp e cardápio digital, personalização avançada e suporte 24/7.</li>
                         </ul>
 
-                        <Button variant="outline-primary w-100" size="lg">Iniciar teste grátis</Button>
+                        <Button variant="outline-secondary w-100" size="lg">Iniciar teste grátis</Button>
                      </Card.Body>
                   </Card>
                </Col>

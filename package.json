@@ -12,18 +12,23 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hookform/resolvers": "^3.3.4",
     "bootstrap": "^5.3.2",
     "next": "14.0.4",
     "node": "^21.2.0",
     "react": "^18",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18",
-    "react-typed": "^2.0.12"
+    "react-hook-form": "^7.51.2",
+    "react-input-mask": "^2.0.4",
+    "react-typed": "^2.0.12",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-input-mask": "^3.0.5",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "typescript": "^5"

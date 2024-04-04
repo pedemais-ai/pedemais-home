@@ -1,86 +1,22 @@
-// page.tsx
+
 "use client";
+
 import React, {useEffect, useState} from 'react';
 import {Button, ButtonGroup, Card, Col, Container, Image, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap';
 import Lead from "@/components/register/Lead";
-
-const WordAnimation: React.FC = () => {
-    const [word, setWord] = useState('');
-    const [wordIndex, setWordIndex] = useState(0);
-
-    useEffect(() => {
-        const targetWords = ['Pedemais.AI', 'WhatsApp'];
-        const currentWord = targetWords[wordIndex];
-        const wordArray = currentWord.split('');
-        let displayedWord = '';
-        let charIndex = 0;
-
-        const interval = setInterval(() => {
-            displayedWord += wordArray[charIndex];
-            setWord(displayedWord);
-
-            charIndex += 1;
-
-            if (charIndex === wordArray.length) {
-                clearInterval(interval);
-
-                // Aguardar 1500 milissegundos (1.5 segundos) após a palavra ser totalmente escrita
-                setTimeout(() => {
-                    // Se já completamos um ciclo, interromper a animação
-                    if (wordIndex === targetWords.length - 1) {
-                        // Lógica para interromper a animação, se necessário
-                        return;
-                    }
-
-                    // Trocar para a próxima palavra após o intervalo
-                    setWordIndex((prevIndex) => prevIndex + 1);
-                }, 1500);
-            }
-        }, 150); // Intervalo menor para uma escrita mais lenta
-
-        return () => clearInterval(interval);
-    }, [wordIndex]);
-
-    return <h1 className="display-3 custom-bold mb-4 text-white">Venda Mais no <br/><span className="text-yellow">#delivery</span> com <br/>o Poder do <span className="text-yellow">{word}!</span></h1>;
-};
+import NavBar from "@/components/home/NavBar";
+import WordAnimation from "@/components/home/WordAnimation";
 
 
 const Home = () => {
 
-
     return (
         <>
-            <Navbar expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm navbar-blur">
-                <Container>
-                    <Navbar.Brand href="#" className="font-weight-normal">
-                        <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-block d-md-none" width="200px" height="auto" fluid/> {/* Para dispositivos móveis */}
-                        <Image src="img/logo.svg" alt="Descrição da Imagem" className="d-none d-md-block" width="280px" height="auto" fluid/> {/* Para outras resoluções */}
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Col md={12} className="mb-3 mb-md-0 d-flex align-items-center justify-content-md-end justify-content-center"> {/* Adicionando a classe justify-content-center para centralizar */}
-                            <Nav className="ml-md-auto align-items-center">
-                                <NavDropdown title="Funcionalidades" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#">Cardápio Digital</NavDropdown.Item>
-                                    <NavDropdown.Item href="#">Impressão de Pedidos</NavDropdown.Item>
-                                    <NavDropdown.Item href="#">QR Code</NavDropdown.Item>
-                                    <NavDropdown.Item href="#">Mais Funções</NavDropdown.Item>
-                                </NavDropdown>
-                                <Nav.Link href="#" className="text-dark">Planos</Nav.Link>
-                                <Nav.Link href="#" className="text-dark">Integrações</Nav.Link>
-                                <Nav.Link href="#" className="text-dark">Fale Conosco</Nav.Link>
-                                <Nav.Link href="#" className="text-dark">Blog</Nav.Link>
-                                <Nav.Link href="#" className="btn btn-primary fs-5 px-4 py-3 ml-2 fw-semibold ms-md-3">Iniciar teste grátis &rarr;</Nav.Link>
-                            </Nav>
-                        </Col>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            <NavBar/>
 
             <Container className="bg-header p-md-5" fluid>
                 <Image src="/img/robo-apontando-small.png" alt="Robô apontando" width="fluid" height="fluid"/>
-                <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{marginTop: '4rem'}}> {/* First Column */}
+                <Row className="mb-5 py-3 pt-md-5 pb-md-4 mx-auto" style={{marginTop: '4rem'}}>
                     <Col md={7} className="ps-md-5 mb-4 mb-md-0 d-flex align-items-center pe-3">
                         <div>
                             <WordAnimation/>
@@ -88,9 +24,9 @@ const Home = () => {
                             <Button className="p-3" variant="primary" size="lg">Iniciar teste grátis &rarr;</Button><br/>
                             <Button className=" mt-3 p-3" variant="outline-primary" size="lg">Fale com um consultor &rarr;</Button>
                         </div>
-                    </Col> {/* Second Column */}
+                    </Col>
                     <Col md={5}>
-                        <Lead />
+                        <Lead/>
                     </Col>
                 </Row>
             </Container>
@@ -291,7 +227,6 @@ const Home = () => {
                     </Row>
                 </Container>
             </Container>
-
 
             <Container className="bg-tipo" fluid>
                 <Container className="pt-5 mt-5">
@@ -513,7 +448,6 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-
 
             <Container className="bg-bottom" fluid>
                 <Container>

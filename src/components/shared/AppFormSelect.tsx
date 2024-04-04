@@ -1,5 +1,4 @@
 import {Form} from "react-bootstrap";
-import {UseFormRegister} from "react-hook-form/dist/types/form";
 import {FieldErrors, FieldPath, FieldValues} from "react-hook-form";
 import * as React from "react";
 
@@ -7,7 +6,7 @@ interface SelectInputProps<TFieldValues extends FieldValues = FieldValues> {
     id: FieldPath<TFieldValues>;
     label?: React.ReactNode;
     options: { value: string; label: string }[];
-    register: UseFormRegister<TFieldValues>;
+    register: any;
     errors: FieldErrors<TFieldValues> | any;
     required?: boolean;
     className?: string;

@@ -73,6 +73,7 @@ export default function LeadRegister({setLeadId} : {
             className="p-4 bg-white"
             style={{borderRadius: '8px', boxShadow: '10px 10px 10px rgba(0, 0, 0, 0.1)', marginBottom: '20px', border: '1px solid #ccc'}}
         >
+            {API_URL}
             <h5 className="mb-2 text-red custom-bold">Teste a PedeMais.Ai sem pagar nada</h5>
             <p className="lead mb-4">Faça o seu cadastro rapidinho ai</p>
 

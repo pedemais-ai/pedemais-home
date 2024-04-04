@@ -9,8 +9,8 @@ export default function NavBar() {
         <Navbar expand="md" fixed="top" className="p-3 mb-3 border-bottom shadow-sm navbar-blur">
             <Container>
                 <Navbar.Brand href="#" className="font-weight-normal">
-                    <Image src="/img/logo.svg" alt="Descrição da Imagem" className="d-block d-md-none" width="200px" height="auto" fluid/>
-                    <Image src="/img/logo.svg" alt="Descrição da Imagem" className="d-none d-md-block" width="280px" height="auto" fluid/>
+                    <Image src={"/img/logo.svg"} alt="Descrição da Imagem" className="d-block d-md-none" width={200} height="auto" fluid/>
+                    <Image src={"/img/logo.svg"} alt="Descrição da Imagem" className="d-none d-md-block" width={280} height="auto" fluid/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 

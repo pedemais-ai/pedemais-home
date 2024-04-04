@@ -26,7 +26,7 @@ export default function LeadRegister({setLeadId} : {
     });
 
     const onSubmit: SubmitHandler<LeadRegistrationInputs> = async function (data) {
-
+        console.log(API_URL)
         try {
 
             const response = await fetch(`${API_URL}/api/lead/register`, {

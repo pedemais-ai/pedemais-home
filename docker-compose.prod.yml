@@ -2,7 +2,7 @@ version: "3"
 
 services:
   next-app:
-    container_name: pedemais-app
+    container_name: pedemais-home
     build:
       context: .
       dockerfile: prod.Dockerfile

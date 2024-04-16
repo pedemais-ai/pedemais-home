@@ -1,1 +1,1 @@
-export const API_URL: string = String(process.env.NEXT_PUBLIC_API_URL);
+export const API_URL: string = String('https://app.pedemais.ai/');

@@ -37,11 +37,10 @@ export default function LeadRegister({setLeadId} : {
                 body: JSON.stringify(data),
             });
 
-
             if (response.ok) {
                 const responseData = await response.json();
 
-                setLeadId(responseData.id);
+                window.location.href = `https://app.pedemais.ai/register/finish?id=${responseData.id}`;
             } else {
                 const errorData = await response.json();
 
